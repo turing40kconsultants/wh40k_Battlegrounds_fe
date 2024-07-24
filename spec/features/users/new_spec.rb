@@ -16,6 +16,6 @@ RSpec.describe "New User" do
     fill_in :password_digest, with: "123123"
 
     click_on "Create a New Account"
-    expect(current_path).to eq("/dashboard")
+    expect(current_path).to eq(login_path)
   end
 end
