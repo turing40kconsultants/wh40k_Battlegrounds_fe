@@ -7,4 +7,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  root "welcome#index"
+  
+  resources :users, only: [:new, :create] do
+    get "/dashborad", to: "users#index"
+  end
+  get "/login", to: "login#index"
+
 end
