@@ -11,6 +11,9 @@
 ![Ruby][ruby-image]
 ![Rails][rails-image]
 
+## Deployed location
+[Site](https://intense-gorge-51639-2d7942788e0c.herokuapp.com)
+
 ## Development setup
 
 The front-end of this project uses Ruby on Rails 7.1.3 
