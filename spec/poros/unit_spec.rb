@@ -15,5 +15,6 @@ RSpec.describe Unit do
     expect(unit.movement).to eq(6)
     expect(unit.objective_control).to eq(4)
     expect(unit.leadership).to eq(6)
+    expect(unit.weapons).to be_a Array
   end
 end

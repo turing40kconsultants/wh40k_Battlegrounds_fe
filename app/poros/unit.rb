@@ -1,5 +1,15 @@
 class Unit
-  attr_reader :name, :id, :movement, :toughness, :sv, :invul_sv, :wounds, :leadership, :objective_control, :faction_id
+  attr_reader :name, 
+              :id, 
+              :movement, 
+              :toughness, 
+              :sv, 
+              :invul_sv, 
+              :wounds, 
+              :leadership, 
+              :objective_control, 
+              :faction_id,
+              :weapons
 
   def initialize(unit_data)
     @id = unit_data[:id]
