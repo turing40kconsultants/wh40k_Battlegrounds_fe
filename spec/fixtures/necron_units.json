@@ -1,0 +1,60 @@
+{
+  "data": [
+      {
+          "id": "1",
+          "type": "unit",
+          "attributes": {
+              "name": "C'Tan Shard of the Nightbringer",
+              "movement": 6,
+              "toughness": 11,
+              "sv": 4,
+              "wounds": 12,
+              "leadership": 6,
+              "objective_control": 4,
+              "faction_id": 1
+          }
+      },
+      {
+          "id": "2",
+          "type": "unit",
+          "attributes": {
+              "name": "Skorpekh Destroyers",
+              "movement": 8,
+              "toughness": 6,
+              "sv": 3,
+              "wounds": 3,
+              "leadership": 7,
+              "objective_control": 2,
+              "faction_id": 1
+          }
+      },
+      {
+          "id": "3",
+          "type": "unit",
+          "attributes": {
+              "name": "Lychguard",
+              "movement": 5,
+              "toughness": 5,
+              "sv": 3,
+              "wounds": 2,
+              "leadership": 7,
+              "objective_control": 1,
+              "faction_id": 1
+          }
+      },
+      {
+          "id": "4",
+          "type": "unit",
+          "attributes": {
+              "name": "Immortals",
+              "movement": 5,
+              "toughness": 5,
+              "sv": 3,
+              "wounds": 1,
+              "leadership": 7,
+              "objective_control": 2,
+              "faction_id": 1
+          }
+      }
+  ]
+}
