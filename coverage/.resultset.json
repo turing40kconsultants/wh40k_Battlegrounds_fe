@@ -1,18 +1,40 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cheelee/turing_work/3mod/projects/wh40k_Battlegrounds_fe/spec/poros/unit_spec.rb": {
+      "/Users/cheelee/turing_work/3mod/projects/wh40k_Battlegrounds_fe/spec/facades/wh40k_bgs.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
           1,
           0,
           0,
           null,
+          0,
           null,
+          0,
+          0,
+          null,
+          0,
           null,
           null
         ]
@@ -351,15 +373,19 @@
           null
         ]
       },
-      "/Users/cheelee/turing_work/3mod/projects/wh40k_Battlegrounds_fe/app/poros/unit.rb": {
+      "/Users/cheelee/turing_work/3mod/projects/wh40k_Battlegrounds_fe/app/facades/wh40k_bgs_facade.rb": {
         "lines": [
           1,
           1,
           null,
+          null,
+          null,
           1,
           1,
+          null,
           0,
           0,
+          null,
           null,
           null
         ]
@@ -368,7 +394,7 @@
         "lines": [
           1,
           1,
-          1,
+          0,
           null,
           null,
           null,
@@ -378,13 +404,13 @@
           null,
           null,
           1,
-          1,
-          1,
+          0,
+          0,
           null,
           null
         ]
       }
     },
-    "timestamp": 1722274753
+    "timestamp": 1722275468
   }
 }

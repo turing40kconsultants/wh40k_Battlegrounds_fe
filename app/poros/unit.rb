@@ -5,5 +5,12 @@ class Unit
     binding.pry
     @id = unit_data[:id]
     @name = unit_data[:attributes][:name]
+    @movement = unit_data[:attributes][:movement]
+    @name = unit_data[:attributes][:name]
+    @name = unit_data[:attributes][:name]
+    @name = unit_data[:attributes][:name]
+    @name = unit_data[:attributes][:name]
+    @name = unit_data[:attributes][:name]
+    @name = unit_data[:attributes][:name]
   end
 end

@@ -3,11 +3,11 @@ class Wh40kBgsFacade
 
   end
 
-  def all_units
-    json = # Wh40kBackendServices.get_all_factions
+  def all_units(faction_id)
+    json = WhService.get_factions(faction_id)
 
     json[:data].map do |unit_data|
-      Unit.neew(unit_data)
+      Unit.new(unit_data)
     end
   end
 end
