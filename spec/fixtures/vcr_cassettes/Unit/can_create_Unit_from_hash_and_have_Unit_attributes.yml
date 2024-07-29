@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://wh40k-battlegrounds-be-ce09c759206c.herokuapp.com/api/v1/factions/1/units
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 29 Jul 2024 18:43:02 GMT
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722278583&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ASZ1ivTiipZPeFDpSh%2BJ8NanpDu4nXsq9iiZPoIDDJI%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1722278583&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=ASZ1ivTiipZPeFDpSh%2BJ8NanpDu4nXsq9iiZPoIDDJI%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"31ab6baf507fa448f72799e3af0c2889"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7903d097-a934-48ed-8320-8801e210770b
+      X-Runtime:
+      - '0.061702'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Content-Length:
+      - '2068'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"unit","attributes":{"name":"C''Tan Shard
+        of the Nightbringer","movement":6,"toughness":11,"sv":4,"invul_sv":4,"wounds":12,"leadership":6,"objective_control":4,"faction_id":1},"weapons":{"data":[{"id":"1","type":"weapon","attributes":{"name":"Scythe
+        of the Nightbringer - strike","attacks":6,"ws":2,"strength":14,"ap":4,"damage":"D6+2","range":null},"abilities":{"data":[{"id":"6","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Critical wounds inflict mortal wounds instead"}}]}},{"id":"2","type":"weapon","attributes":{"name":"Scythe
+        of the Nightbringer - sweep","attacks":14,"ws":2,"strength":8,"ap":2,"damage":"2","range":null},"abilities":{"data":[]}}]}},{"id":"2","type":"unit","attributes":{"name":"Skorpekh
+        Destroyers","movement":8,"toughness":6,"sv":3,"invul_sv":null,"wounds":3,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"3","type":"weapon","attributes":{"name":"Skorpekh
+        Hyperphase Weapons","attacks":4,"ws":3,"strength":7,"ap":2,"damage":"2","range":null},"abilities":{"data":[]}}]}},{"id":"3","type":"unit","attributes":{"name":"Lychguard","movement":5,"toughness":5,"sv":3,"invul_sv":null,"wounds":2,"leadership":7,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"4","type":"weapon","attributes":{"name":"Hyperphase
+        Sword","attacks":3,"ws":3,"strength":6,"ap":2,"damage":"1","range":null},"abilities":{"data":[]}},{"id":"5","type":"weapon","attributes":{"name":"Warscythe","attacks":2,"ws":3,"strength":8,"ap":3,"damage":"2","range":null},"abilities":{"data":[{"id":"6","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Critical wounds inflict mortal wounds instead"}}]}}]}},{"id":"4","type":"unit","attributes":{"name":"Immortals","movement":5,"toughness":5,"sv":3,"invul_sv":null,"wounds":1,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"6","type":"weapon","attributes":{"name":"Close
+        Combat Weapon","attacks":2,"ws":3,"strength":4,"ap":0,"damage":"1","range":null},"abilities":{"data":[]}}]}}]}'
+  recorded_at: Mon, 29 Jul 2024 18:43:03 GMT
+recorded_with: VCR 6.2.0
