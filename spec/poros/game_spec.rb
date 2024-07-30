@@ -52,7 +52,7 @@ RSpec.describe "Game", type: :Poro do
       allow(game).to receive(:rand).and_return(1, 1, 1, 1, 1, 3, 4, 5, # 3 successful hits
                                                 1, 5, 6) #1 failed wound
       game.attack(ctan)
-
+    
       expect(game.apply_saves).to eq(2)
     end
   end
