@@ -31,4 +31,12 @@ class Unit
     end
   end
 
+  def wound
+    @wounds -= 1
+  end
+
+  def dead?
+    @wounds <= 0
+  end
+
 end
