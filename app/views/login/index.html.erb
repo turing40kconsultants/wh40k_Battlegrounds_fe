@@ -1,13 +1,5 @@
 <h1>Welcome to 40K arena</h1>
 
-<%= form_with url: "/login", data: { turbo: false } do |form| %>
-  <%= form.label :email, "Email: " %>
-  <%= form.text_field :email %></br>
-
-  <%= form.label :password, "Password: " %>
-  <%= form.text_field :password %></br>
-
-  <%= form.submit 'Log In' %>
-<% end %>
+<%= link_to "Login", "https://github.com/login/oauth/authorize?client_id=Ov23liExNf55VmNHjDtI&scope=repo" %>
 
 <%= link_to 'Create New Account', new_user_path %>
