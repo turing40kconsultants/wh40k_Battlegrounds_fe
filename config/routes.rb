@@ -9,9 +9,10 @@ Rails.application.routes.draw do
   # root "posts#index"
   root "welcome#index"
   
-  resources :users, only: [:new, :create] do
-    get "/dashborad", to: "users#index"
-  end
+  get "/auth/github/callback", to: "sessions#create"
+
+  get "/dashboard", to: "dashboard#index"
+  resources :users, only: [:new, :create]
   get "/login", to: "login#index"
 
 end
