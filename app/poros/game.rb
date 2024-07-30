@@ -9,6 +9,7 @@ class Game
   def attack(defender)
     hits = roll_to_hit
     wounds = roll_to_wound(hits, defender)
+    require 'pry'; binding.pry
     final_wounds = apply_saves(wounds, defender)
     apply_damage(final_wounds, defender)
   end
@@ -78,7 +79,7 @@ class Game
     [defender.invul_sv, modified_save].compact.min
   end
 
-  def weapon_damage_roll
+  def weapon_damage_roll # refactor this later
     if @attacker.weapons[0].damage.to_i
       @attacker.weapons[0].damage.to_i
     elsif @attacker.weapons[0].damage == "D6+2"

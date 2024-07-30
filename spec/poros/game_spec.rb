@@ -1,14 +1,18 @@
 require "rails_helper"
 
 RSpec.describe "Game", type: :Poro do
-  let(:json_weapon) { WhService.get_units_by_faction(1)[:data].first[:weapons][:data].first }
-  let(:scythe) { Weapon.new(json_weapon) }
+  # let(:json_weapon) { WhService.get_units_by_faction(1)[:data].first[:weapons][:data].first }
+  # let(:scythe) { Weapon.new(json_weapon) }
 
-  let(:json_unit) { WhService.get_units_by_faction(1)[:data].first }
-  let(:ctan) { Unit.new(json_unit) }
+  # let(:json_unit) { WhService.get_units_by_faction(1)[:data].first }
+  necron_units = JSON.parse(File.read('spec/fixtures/necron_units.json'), symbolize_names: true)[:data]
+  # require 'pry'; binding.pry
+  ctan_data = necron_units.find { |unit| unit[:id] == '29'}
+  let(:ctan) { Unit.new(ctan_data) }
 
-  let(:json_unit2) { WhService.get_units_by_faction(2)[:data].first }
-  let(:lion) { Unit.new(json_unit2) }
+  dark_angel_units = JSON.parse(File.read('spec/fixtures/dark_angel_units.json'), symbolize_names: true)[:data]
+  lion_data = dark_angel_units.find { |unit| unit[:id] == '65'}
+  let(:lion) { Unit.new(lion_data) }
 
 
   # let(:cultist) {Unit.new('Cultist Mob', 6, 3, 6, 1, 7, 1, nil)}

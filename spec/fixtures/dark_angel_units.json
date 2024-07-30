@@ -1,0 +1,2216 @@
+{
+  "data": [
+      {
+          "id": "60",
+          "type": "unit",
+          "attributes": {
+              "name": "Azrael",
+              "movement": 6,
+              "toughness": 4,
+              "sv": 2,
+              "invul_sv": 4,
+              "wounds": 6,
+              "leadership": 6,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "120",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Lion's Wrath",
+                          "attacks": "2",
+                          "ws": 2,
+                          "strength": 8,
+                          "ap": 3,
+                          "damage": "2",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "161",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "162",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "163",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Infantry 4+, Devastating Wounds, Rapid Fire 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "121",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "The Sword of Secrets",
+                          "attacks": "6",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 4,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "164",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "61",
+          "type": "unit",
+          "attributes": {
+              "name": "Belial",
+              "movement": 5,
+              "toughness": 5,
+              "sv": 2,
+              "invul_sv": 4,
+              "wounds": 6,
+              "leadership": 6,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "122",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Master-crafted storm bolter",
+                          "attacks": "2",
+                          "ws": 2,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "2",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "165",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Precision, Rapid Fire 2",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "166",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Precision, Rapid Fire 2",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "123",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "The Sword of Silence",
+                          "attacks": "6",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "167",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Precision",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "62",
+          "type": "unit",
+          "attributes": {
+              "name": "Sammael",
+              "movement": 12,
+              "toughness": 5,
+              "sv": 3,
+              "invul_sv": 4,
+              "wounds": 7,
+              "leadership": 6,
+              "objective_control": 2,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "124",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Bolt Pistol",
+                          "attacks": "1",
+                          "ws": 2,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "168",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "125",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Master-crafted plasma cannon",
+                          "attacks": "D3",
+                          "ws": 2,
+                          "strength": 8,
+                          "ap": 3,
+                          "damage": "2",
+                          "range": 36
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "169",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "126",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Twin storm bolter",
+                          "attacks": "2",
+                          "ws": 2,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "170",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 2, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "171",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 2, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "127",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "The Raven Sword",
+                          "attacks": "6",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 3,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "172",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Sustained Hits 2",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "63",
+          "type": "unit",
+          "attributes": {
+              "name": "Ezekiel",
+              "movement": 6,
+              "toughness": 4,
+              "sv": 2,
+              "invul_sv": 4,
+              "wounds": 4,
+              "leadership": 6,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "128",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "The Deliverer",
+                          "attacks": "1",
+                          "ws": 2,
+                          "strength": 4,
+                          "ap": 1,
+                          "damage": "2",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "173",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol, Precision",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "174",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol, Precision",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "129",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Mind Wipe - witchfire",
+                          "attacks": "1",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "D6",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "175",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "176",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "177",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "130",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Mind Wipe - focussed witchfire",
+                          "attacks": "1",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "D6",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "178",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Character 4+, Devastating Wounds, Hazardous, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "179",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Character 4+, Devastating Wounds, Hazardous, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "180",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Character 4+, Devastating Wounds, Hazardous, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "181",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Character 4+, Devastating Wounds, Hazardous, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "182",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Character 4+, Devastating Wounds, Hazardous, Precision, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "131",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Traitor's Bane",
+                          "attacks": "4",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "D3",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "183",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Chaos 2+, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "184",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Chaos 2+, Psychic",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "64",
+          "type": "unit",
+          "attributes": {
+              "name": "Asmodai",
+              "movement": 6,
+              "toughness": 4,
+              "sv": 3,
+              "invul_sv": 4,
+              "wounds": 4,
+              "leadership": 5,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "132",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Heavy Bolt Pistol",
+                          "attacks": "1",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 1,
+                          "damage": "1",
+                          "range": 18
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "185",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "133",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Crozius Arcanum and Power Weapon - strike",
+                          "attacks": "5",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "186",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "134",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Crozius Arcanum and Power Weapon - sweep",
+                          "attacks": "8",
+                          "ws": 2,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "187",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "65",
+          "type": "unit",
+          "attributes": {
+              "name": "Lion El'Jonson",
+              "movement": 8,
+              "toughness": 9,
+              "sv": 2,
+              "invul_sv": 3,
+              "wounds": 10,
+              "leadership": 5,
+              "objective_control": 4,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "135",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Arma Luminis - bolt",
+                          "attacks": "4",
+                          "ws": 2,
+                          "strength": 4,
+                          "ap": 1,
+                          "damage": "2",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "188",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "136",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Arma Luminis - plasma",
+                          "attacks": "2",
+                          "ws": 2,
+                          "strength": 8,
+                          "ap": 3,
+                          "damage": "2",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "189",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "137",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Fealty - strike",
+                          "attacks": "8",
+                          "ws": 2,
+                          "strength": 12,
+                          "ap": 4,
+                          "damage": "4",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "190",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Lethal Hits",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "138",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Fealty - sweep",
+                          "attacks": "16",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 3,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "191",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Sustained Hits 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "66",
+          "type": "unit",
+          "attributes": {
+              "name": "Lazarus",
+              "movement": 6,
+              "toughness": 4,
+              "sv": 3,
+              "invul_sv": 4,
+              "wounds": 5,
+              "leadership": 6,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "139",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Bolt pistol",
+                          "attacks": "1",
+                          "ws": 2,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "192",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "140",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Enmity’s Edge",
+                          "attacks": "6",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 3,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "193",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Psyker 2+",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "67",
+          "type": "unit",
+          "attributes": {
+              "name": "Nephilim Jetfighter",
+              "movement": 20,
+              "toughness": 8,
+              "sv": 3,
+              "invul_sv": 5,
+              "wounds": 11,
+              "leadership": 6,
+              "objective_control": 0,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "141",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Blacksword missiles",
+                          "attacks": "2",
+                          "ws": 3,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "D6",
+                          "range": 36
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "194",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Fly 2+",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "142",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Twin heavy bolter",
+                          "attacks": "3",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 1,
+                          "damage": "2",
+                          "range": 36
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "195",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Sustained Hits 1, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "196",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Sustained Hits 1, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "143",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Armoured hull",
+                          "attacks": "3",
+                          "ws": 4,
+                          "strength": 6,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "197",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "68",
+          "type": "unit",
+          "attributes": {
+              "name": "Ravenwing Dark Talon",
+              "movement": 20,
+              "toughness": 8,
+              "sv": 3,
+              "invul_sv": 5,
+              "wounds": 11,
+              "leadership": 6,
+              "objective_control": 0,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "144",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Hurricane bolter",
+                          "attacks": "6",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "198",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 6, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "199",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 6, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "145",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Rift cannon",
+                          "attacks": "D3+1",
+                          "ws": 3,
+                          "strength": 16,
+                          "ap": 4,
+                          "damage": "3",
+                          "range": 18
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "200",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast, Devastating Wounds",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "201",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast, Devastating Wounds",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "146",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Armoured Hull",
+                          "attacks": "3",
+                          "ws": 4,
+                          "strength": 6,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "202",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "69",
+          "type": "unit",
+          "attributes": {
+              "name": "Land Speeder Vengeance",
+              "movement": 14,
+              "toughness": 8,
+              "sv": 3,
+              "invul_sv": 5,
+              "wounds": 10,
+              "leadership": 6,
+              "objective_control": 3,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "147",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Plasma storm battery - standard",
+                          "attacks": "D6+1",
+                          "ws": 3,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 36
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "203",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "204",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "148",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Plasma storm battery - supercharge",
+                          "attacks": "D6+1",
+                          "ws": 3,
+                          "strength": 9,
+                          "ap": 3,
+                          "damage": "2",
+                          "range": 36
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "205",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast, Hazardous, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "206",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast, Hazardous, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "207",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast, Hazardous, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "149",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Close Combat Weapon",
+                          "attacks": "4",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "208",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "70",
+          "type": "unit",
+          "attributes": {
+              "name": "Ravenwing Darkshroud",
+              "movement": 14,
+              "toughness": 8,
+              "sv": 3,
+              "invul_sv": 5,
+              "wounds": 10,
+              "leadership": 6,
+              "objective_control": 3,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "150",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Close Combat Weapon",
+                          "attacks": "4",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "209",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "71",
+          "type": "unit",
+          "attributes": {
+              "name": "Ravenwing Black Knights",
+              "movement": 12,
+              "toughness": 5,
+              "sv": 3,
+              "invul_sv": 5,
+              "wounds": 3,
+              "leadership": 6,
+              "objective_control": 2,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "151",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Bolt Pistol",
+                          "attacks": "1",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "210",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "152",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Black Knight combat weapon",
+                          "attacks": "3",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "211",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "153",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Plasma talon - Standard",
+                          "attacks": "2",
+                          "ws": 3,
+                          "strength": 7,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 18
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "212",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "154",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Plasma talon - Supercharged",
+                          "attacks": "2",
+                          "ws": 3,
+                          "strength": 8,
+                          "ap": 3,
+                          "damage": "2",
+                          "range": 18
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "213",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Hazardous, Rapid Fire 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "214",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Hazardous, Rapid Fire 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "155",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Astartes grenade launcher - frag",
+                          "attacks": "D3",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "215",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Blast",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "156",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Astartes grenade launcher - krak",
+                          "attacks": "1",
+                          "ws": 3,
+                          "strength": 9,
+                          "ap": 2,
+                          "damage": "D3",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "216",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "72",
+          "type": "unit",
+          "attributes": {
+              "name": "Ravenwing Command Squad",
+              "movement": 12,
+              "toughness": 5,
+              "sv": 3,
+              "invul_sv": 5,
+              "wounds": 4,
+              "leadership": 6,
+              "objective_control": 2,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "157",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Black Knight combat weapon",
+                          "attacks": "3",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "217",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "158",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Bolt Pistol",
+                          "attacks": "1",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 12
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "218",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "159",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Master-crafted power weapon",
+                          "attacks": "6",
+                          "ws": 2,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "219",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "73",
+          "type": "unit",
+          "attributes": {
+              "name": "Deathwing Knights",
+              "movement": 5,
+              "toughness": 5,
+              "sv": 2,
+              "invul_sv": 4,
+              "wounds": 4,
+              "leadership": 6,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "160",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Mace of absolution",
+                          "attacks": "4",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "220",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Monster 4+, Anti-Vehicle 4+",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "221",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Monster 4+, Anti-Vehicle 4+",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "161",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Power Weapon",
+                          "attacks": "5",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "222",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "74",
+          "type": "unit",
+          "attributes": {
+              "name": "Deathwing Terminator Squad",
+              "movement": 5,
+              "toughness": 5,
+              "sv": 2,
+              "invul_sv": 4,
+              "wounds": 3,
+              "leadership": 6,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "162",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Storm Bolter",
+                          "attacks": "2",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "223",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 2",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "163",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Power Weapon",
+                          "attacks": "4",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "224",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "164",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Power Fist",
+                          "attacks": "3",
+                          "ws": 3,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "225",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "165",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Chainfist",
+                          "attacks": "3",
+                          "ws": 4,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "226",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Vehicle 3+",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "75",
+          "type": "unit",
+          "attributes": {
+              "name": "Inner Circle Companions",
+              "movement": 6,
+              "toughness": 4,
+              "sv": 3,
+              "invul_sv": null,
+              "wounds": 3,
+              "leadership": 6,
+              "objective_control": 2,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "166",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Heavy Bolt Pistol",
+                          "attacks": "1",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 1,
+                          "damage": "1",
+                          "range": 18
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "227",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Pistol",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "167",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Calibanite Greatsword - Strike",
+                          "attacks": "4",
+                          "ws": 3,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "228",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Lethal Hits",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "168",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "➤ Calibanite Greatsword - Sweep",
+                          "attacks": "5",
+                          "ws": 3,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "229",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Sustained Hits 2",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "76",
+          "type": "unit",
+          "attributes": {
+              "name": "Ravenwing Talonmaster [Legends]",
+              "movement": 16,
+              "toughness": 7,
+              "sv": 3,
+              "invul_sv": 5,
+              "wounds": 6,
+              "leadership": 6,
+              "objective_control": 2,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "169",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Twin Assault Cannon",
+                          "attacks": "6",
+                          "ws": 3,
+                          "strength": 6,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "230",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "231",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "170",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Twin Heavy Bolter",
+                          "attacks": "3",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 1,
+                          "damage": "2",
+                          "range": 36
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "232",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Sustained Hits 1, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              },
+                              {
+                                  "id": "233",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Sustained Hits 1, Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "171",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Power Weapon",
+                          "attacks": "5",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "234",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "77",
+          "type": "unit",
+          "attributes": {
+              "name": "Deathwing Strikemaster [Legends]",
+              "movement": 5,
+              "toughness": 5,
+              "sv": 2,
+              "invul_sv": 4,
+              "wounds": 5,
+              "leadership": 6,
+              "objective_control": 1,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "172",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Storm Bolter",
+                          "attacks": "2",
+                          "ws": 2,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "235",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 2",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "173",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Master-crafted Power Weapon",
+                          "attacks": "5",
+                          "ws": 2,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "236",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "174",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Chainfist",
+                          "attacks": "4",
+                          "ws": 3,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "237",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Vehicle 3+",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "175",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Mace of Absolution",
+                          "attacks": "5",
+                          "ws": 2,
+                          "strength": 6,
+                          "ap": 1,
+                          "damage": "3",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "238",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "176",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Power Fist",
+                          "attacks": "4",
+                          "ws": 2,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "239",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "177",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Thunder Hammer",
+                          "attacks": "4",
+                          "ws": 3,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "240",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "178",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Twin Lightning Claws",
+                          "attacks": "6",
+                          "ws": 2,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "241",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      },
+      {
+          "id": "78",
+          "type": "unit",
+          "attributes": {
+              "name": "Deathwing Command Squad [Legends]",
+              "movement": 0,
+              "toughness": 0,
+              "sv": 0,
+              "invul_sv": null,
+              "wounds": 0,
+              "leadership": 0,
+              "objective_control": 0,
+              "faction_id": 2
+          },
+          "weapons": {
+              "data": [
+                  {
+                      "id": "179",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Power Fist",
+                          "attacks": "3",
+                          "ws": 3,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "242",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "180",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Storm Bolter",
+                          "attacks": "2",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "243",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 2",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "181",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Chainfist",
+                          "attacks": "3",
+                          "ws": 4,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "244",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Anti-Vehicle 3+",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "182",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Halberd of Caliban",
+                          "attacks": "5",
+                          "ws": 3,
+                          "strength": 6,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "245",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Precision",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "183",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Storm Bolter",
+                          "attacks": "2",
+                          "ws": 3,
+                          "strength": 4,
+                          "ap": 0,
+                          "damage": "1",
+                          "range": 24
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "246",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Rapid Fire 1",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "184",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Power Weapon",
+                          "attacks": "4",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "247",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "-",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "185",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Twin Lightning Claws",
+                          "attacks": "5",
+                          "ws": 3,
+                          "strength": 5,
+                          "ap": 2,
+                          "damage": "1",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "248",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Twin-Linked",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  },
+                  {
+                      "id": "186",
+                      "type": "weapon",
+                      "attributes": {
+                          "name": "Thunder Hammer",
+                          "attacks": "3",
+                          "ws": 4,
+                          "strength": 8,
+                          "ap": 2,
+                          "damage": "2",
+                          "range": 0
+                      },
+                      "abilities": {
+                          "data": [
+                              {
+                                  "id": "249",
+                                  "type": "ability",
+                                  "attributes": {
+                                      "name": "Devastating Wounds",
+                                      "description": "Refer to game rules"
+                                  }
+                              }
+                          ]
+                      }
+                  }
+              ]
+          }
+      }
+  ]
+}
