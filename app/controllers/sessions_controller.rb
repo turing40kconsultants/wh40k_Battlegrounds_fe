@@ -3,15 +3,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    client_id = "Ov23liExNf55VmNHjDtI"
-    client_secret = "08befc4588ed16bbf59fcf43c9977e9d9e00058a"
+    
     code = params[:code]
     
     conn = Faraday.new(url: 'https://github.com', headers: {'Accept': 'application/json'})
     response = conn.post('/login/oauth/access_token') do |req|
       req.params['code'] = code
-      req.params['client_id'] = client_id
-      req.params['client_secret'] = client_secret
+      req.params['client_id'] = Rails.application.credentials.github[:client_id]
+      req.params['client_secret'] = Rails.application.credentials.github[:client_secret]
     end
     data = JSON.parse(response.body, symbolize_names: true)
     
@@ -24,9 +23,6 @@ class SessionsController < ApplicationController
     #binding.pry
     user = User.find_or_create_by(uid: data[:id], username: data[:login])
 
-    # user.username = data[:login]
-    # user.uid      = data[:id]
-    # user.token    = access_token
     user.save
 
     session[:user] = user
