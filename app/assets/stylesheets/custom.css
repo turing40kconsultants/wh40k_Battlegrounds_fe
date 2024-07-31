@@ -1,0 +1,14 @@
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card-header {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
