@@ -1,0 +1,22 @@
+<h2>Welcome to Warhammer 40k Battlegrounds</h2>
+<% if @player1 %>
+  <div class="player1">
+    Your Unit:
+    Name: <%= @player1.name %>%
+    Weapon: <%= @player1.weapons.first.name %>%
+  </div>
+<% end %>
+
+<% if @player2 %>
+  <div class="player2">
+    Opponent's Unit:
+    Name: <%= @player2.name %>%
+    Weapon: <%= @player2.weapons.first.name %>%
+  </div>
+<% end %>
+
+<%= link_to 'Choose Units', search_index_path %>
+
+<% if @player1 && @player2 %>
+  <%= link_to 'Start Fight', battle_index_path %>
+<% end%>

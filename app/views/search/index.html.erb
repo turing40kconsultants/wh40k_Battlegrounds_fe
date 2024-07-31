@@ -1,0 +1,14 @@
+<%= form_with url: search_path, method: :get, data: {turbo: false}, local: true do |form| %>
+    <%= select_tag(:nation, options_for_select()) %>
+    <%= submit_tag('Search For Units') %>
+<% end %>
+
+<% if @units %>
+  <%= form_with url: dashboard_path, method: :get, data: {turbo: false}, local: true do |form| %>
+    <%= @units.each do |unit| %>
+      Name: <%= unit.name %>
+      Weapon: <%= unit.weapons.first %>
+      < link to: select>
+    <% end %>
+  <% end%>
+<% end %>
