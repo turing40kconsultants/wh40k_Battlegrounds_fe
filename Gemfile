@@ -49,6 +49,10 @@ gem "faraday"
 gem "jsonapi-serializer"
 gem 'faraday-multipart'
 
+# gem 'bootstrap', '~> 5.1.3'
+gem 'bootstrap', '~> 5.3.2'
+gem 'sassc-rails'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]

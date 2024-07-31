@@ -17,4 +17,5 @@ Rails.application.routes.draw do
   resources :fight, only: :index
   get "/login", to: "login#index"
 
+  get "/results", to: "results#show"
 end
