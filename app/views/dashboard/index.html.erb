@@ -19,5 +19,10 @@
 <div><%= link_to 'Choose Units', search_index_path %></div>
 
 <% if @player && @opponent %>
-  <div><%= link_to 'Start Fight', battle_index_path %></div>
+  <%= form_with url: fight_index_path, method: :get, local: true do |form| %>
+    <%= hidden_field_tag :player, @player.to_json %>
+    <%= hidden_field_tag :opponent, @opponent.to_json %>
+
+    <div><%= f.submit "Start Fight" %></div>
+  <% end %>
 <% end %>
