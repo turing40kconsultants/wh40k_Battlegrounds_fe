@@ -118,11 +118,10 @@ RSpec.describe "Game", type: :Poro do
       allow(game).to receive(:apply_saves).and_return(1)
       allow(game).to receive(:weapon_damage_roll).and_return(2)
 
-      initial_wounds = ctan.wounds
       damage_dealt = game.attack(ctan)
       
       expect(damage_dealt).to eq(2)
-      expect(ctan.wounds).to eq(initial_wounds - 2)
+      expect(ctan.wounds).to eq(10)
     end
   end
 end
