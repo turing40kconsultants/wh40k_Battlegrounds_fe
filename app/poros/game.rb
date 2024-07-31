@@ -8,15 +8,16 @@ class Game
 
   def attack(defender)
     hits = roll_to_hit
-    wounds = roll_to_wound(hits, defender)
-    final_wounds = apply_saves(wounds, defender)
+    wounds_to_be_saved = roll_to_wound(hits, defender)
+    final_wounds = apply_saves(wounds_to_be_saved, defender)
     apply_damage(final_wounds, defender)
   end
 
     # Roll to hit based on weapon skill
   def roll_to_hit
     total_hits = 0
-    @attacker.weapons[0].attacks do #only the first weaepon will make attacks
+    weapon_attack_number = @attacker.weapons[0].attacks.to_i
+    weapon_attack_number.times do #only the first weaepon will make attacks
         roll = rand(1..6)
         if roll >= @attacker.weapons[0].ws
             if roll == 6
@@ -63,10 +64,10 @@ class Game
         5
     else
         6
+      end
     end
-  end
-
-  # Apply armor saves to reduce the number of effective wounds
+    
+    # Apply armor saves to reduce the number of effective wounds
   def apply_saves(wounds, defender)
     best_save = calculate_best_save(defender)
     wounds - wounds.times.count { rand(1..6) >= best_save }
@@ -78,11 +79,23 @@ class Game
     [defender.invul_sv, modified_save].compact.min
   end
 
-  def weapon_damage_roll
+  def weapon_damage_roll # refactor this later
     if @attacker.weapons[0].damage.to_i
       @attacker.weapons[0].damage.to_i
+    elsif @attacker.weapons[0].damage == "D6+4"
+      rand(1..6) + 4
+    elsif @attacker.weapons[0].damage == "D6+3"
+      rand(1..6) + 3
     elsif @attacker.weapons[0].damage == "D6+2"
       rand(1..6) + 2
+    elsif @attacker.weapons[0].damage == "D6+1"
+      rand(1..6) + 1
+    elsif @attacker.weapons[0].damage == "D6"
+      rand(1..6)
+    elsif @attacker.weapons[0].damage == "D3"
+      rand(1..3) 
+    elsif @attacker.weapons[0].damage == "D3+6"
+      rand(1..3) + 6
     end
   end
 
@@ -93,4 +106,5 @@ class Game
     damage_dealt.times { defender.wound }
     damage_dealt
   end
+
 end
