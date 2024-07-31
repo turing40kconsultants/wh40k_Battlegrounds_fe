@@ -1,14 +1,37 @@
-<%= form_with url: search_path, method: :get, data: {turbo: false}, local: true do |form| %>
-    <%= select_tag(:nation, options_for_select()) %>
-    <%= submit_tag('Search For Units') %>
-<% end %>
+<div id="factions">
+  <%= form_with url: search_index_path, method: :get, data: {turbo: false}, local: true do |form| %>
+      <%= select_tag(:faction_id, options_for_select(factions_search)) %>
+      <%= submit_tag('Search For Units') %>
+  <% end %>
+</div><br>
 
-<% if @units %>
+<% if @units_json %>
+  <div class="results">
   <%= form_with url: dashboard_path, method: :get, data: {turbo: false}, local: true do |form| %>
-    <%= @units.each do |unit| %>
-      Name: <%= unit.name %>
-      Weapon: <%= unit.weapons.first %>
-      < link to: select>
+    <% @units_json[:data].each do |unit| %>
+      <% if !unit[:weapons][:data].empty? %>
+        <div id=<%= "unit_#{unit[:id]}" %> >
+
+          <div class="name">Name: <%= unit[:attributes][:name] %></div>
+          
+          <div class="weapon">Weapon: <%= unit[:weapons][:data].first[:attributes][:name] %></div>
+          <div>
+            <label>
+              <%= form.radio_button :player, unit.to_json %>
+              Select for Player 1
+            </label>
+          </div>
+          <div>
+            <label>
+              <%= form.radio_button :opponent, unit.to_json %>
+              Select for Player 2
+            </label>
+          </div>
+
+        </div><br>
+      <% end %>
     <% end %>
+    <%= form.submit "Submit" %>
   <% end%>
+  </div>
 <% end %>

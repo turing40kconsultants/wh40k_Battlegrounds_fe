@@ -1,22 +1,23 @@
 <h2>Welcome to Warhammer 40k Battlegrounds</h2>
-<% if @player1 %>
-  <div class="player1">
-    Your Unit:
-    Name: <%= @player1.name %>%
-    Weapon: <%= @player1.weapons.first.name %>%
-  </div>
+<% if @player %>
+  <div class="player">
+          
+    Your Unit: <br>
+    Name: <%= @player[:attributes][:name] %><br>
+    Weapon: <%= @player[:weapons][:data].first[:attributes][:name] %>
+  </div><br>
 <% end %>
 
-<% if @player2 %>
-  <div class="player2">
-    Opponent's Unit:
-    Name: <%= @player2.name %>%
-    Weapon: <%= @player2.weapons.first.name %>%
-  </div>
+<% if @opponent %>
+  <div class="opponent">
+    Opponent's Unit: <br>
+    Name: <%= @opponent[:attributes][:name] %><br>
+    Weapon: <%= @opponent[:weapons][:data].first[:attributes][:name] %>
+  </div><br>
 <% end %>
 
-<%= link_to 'Choose Units', search_index_path %>
+<div><%= link_to 'Choose Units', search_index_path %></div>
 
-<% if @player1 && @player2 %>
-  <%= link_to 'Start Fight', battle_index_path %>
-<% end%>
+<% if @player && @opponent %>
+  <div><%= link_to 'Start Fight', battle_index_path %></div>
+<% end %>

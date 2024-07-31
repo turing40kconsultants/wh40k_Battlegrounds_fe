@@ -1,0 +1,28 @@
+require "rails_helper"
+
+RSpec.describe "Search" do
+  before(:each) do
+    visit search_index_path
+  end
+
+  it "can search for units by with faction drop down" do
+    expect(page).to_not have_css(".results")
+
+    within("#factions") do
+      select "Necrons", :from => :faction_id
+      click_button("Search For Units")
+    end
+
+    expect(page).to have_css(".results")
+
+    within("#unit_1") do
+      expect(page).to have_css(".name")
+      expect(page).to have_css(".weapon")
+      expect(page).to have_selector("input[type=radio][name=player]")
+      expect(page).to have_selector("input[type=radio][name=opponent]")
+    end
+
+    expect(page).to have_button("Submit")
+# save_and_open_page
+  end
+end
