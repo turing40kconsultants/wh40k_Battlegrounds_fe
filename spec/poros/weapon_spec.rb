@@ -12,7 +12,7 @@ RSpec.describe Weapon do
     expect(weapon.ws).to eq(2)
     expect(weapon.strength).to eq(14)
     expect(weapon.ap).to eq(4)
-    expect(weapon.damage).to eq("D6+2")
+    expect(weapon.damage).to eq("D6+2") #this gonna require another method to do math and figure out the damage
     expect(weapon.range).to eq(nil)
     expect(weapon.abilities).to be_a Array
   end
