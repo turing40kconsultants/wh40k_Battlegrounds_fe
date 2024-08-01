@@ -20,21 +20,21 @@ RSpec.describe "dashboard" do
     click_link("Choose Units")
 
     expect(page).to have_current_path(search_index_path)
-    
     within("#factions") do
-      select "Necrons", :from => :faction_id
-      click_button("Search For Units")
-    end
+    select "Necrons", :from => :faction_id
+    click_button("Search For Units")
+  end
+  
 
-    within("#unit_1") do
+    within("#unit_4") do
       choose("attacker")
     end
-    within("#unit_2") do
+    within("#unit_5") do
       choose("defender")
     end
 
     click_button("Submit")
-# save_and_open_page
+
     expect(page).to have_css(".attacker")
     expect(page).to have_css(".defender")
     expect(page).to have_button("Start Fight")
