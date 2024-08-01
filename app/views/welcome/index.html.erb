@@ -1,5 +1,46 @@
-<h1>Welcome to 40K arena</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>40K Arena</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+      background-image: url('https://www.warhammer-community.com/wp-content/uploads/2021/06/Odl5MQHJWwFe9cSB.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+    .content-box {
+      background-color: rgba(0, 0, 0, 0.8); /* Optional: To make the text stand out against the background */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .content-box h1, .content-box p {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container text-center">
+    <div class="content-box">
+      <h1 class="display-4">Welcome to 40K Arena</h1>
+      <p class="lead">Experience epic battles in the Warhammer 40k universe!</p>
+    
+      <div class="mt-4">
+        <%= link_to "Login with Github", "https://github.com/login/oauth/authorize?client_id=Ov23liExNf55VmNHjDtI&scope=repo", class: "btn btn-primary btn-lg" %>
+      </div>
+    
+      <div class="mt-3">
+        <%= link_to 'Create New Account', new_user_path, class: "btn btn-secondary btn-lg" %>
+      </div>
+    </div>
+  </div>
 
-<%= link_to "Login with Github", "https://github.com/login/oauth/authorize?client_id=Ov23liExNf55VmNHjDtI&scope=repo" %>
-
-<%= link_to 'Create New Account', new_user_path %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</body>
+</html>
