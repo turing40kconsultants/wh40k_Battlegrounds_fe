@@ -4,11 +4,13 @@
       <h2 class="text-center">Battle Results</h2>
     </div>
     <div class="card-body">
-      <p class="card-text text-center">You landed <strong><%= @wounds %></strong> wounds on the Chaos Space Marine</p>
-      <p class="card-text text-center">Your attack killed <strong><%= @kills %></strong> Chaos Space Marines</p>
+      <p class="card-text text-center">You dealt <strong><%= @wounds %></strong> wounds!</p>
+      <% if @kills %>
+        <p class="card-text text-center">Your attack killed <strong><%= @kills %></strong> Unit</p>
+      <% end %>
       <p class="card-text text-center text-danger">Burn the Heretic!</p>
       <div class="text-center mt-4">
-        <%= link_to "Fight Again", battle_index_path, class: 'btn btn-primary' %>
+        <%= link_to "Prepare the Next Battle", dashboard_path, class: 'btn btn-primary' %>
       </div>
     </div>
   </div>

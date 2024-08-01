@@ -7,6 +7,7 @@ class Game
   end
 
   def attack(defender)
+    # binding.pry
     hits = roll_to_hit
     wounds_to_be_saved = roll_to_wound(hits, defender)
     final_wounds = apply_saves(wounds_to_be_saved, defender)
@@ -47,6 +48,7 @@ class Game
 
   # Roll to wound the target based on hits achieved
   def roll_to_wound(hits, defender)
+    # binding.pry
       hits.times.count do
           roll = rand(1..6)
           roll >= wound_check(defender)

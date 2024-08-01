@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get "/dashboard", to: "dashboard#index"
   resources :users, only: [:new, :create]
   resources :search, only: :index
-  resources :battle, only: :index
+  resources :fight, only: :index
   get "/login", to: "login#index"
 
   get "/results", to: "results#show"

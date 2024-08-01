@@ -1,0 +1,618 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://wh40k-battlegrounds-be-ce09c759206c.herokuapp.com/api/v1/factions/1/units
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 31 Jul 2024 17:30:19 GMT
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722447020&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=jKVJQCrFNsDuP1plKFCJ2%2Ft43iEUozf%2F5WcH%2BbUkZ04%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1722447020&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=jKVJQCrFNsDuP1plKFCJ2%2Ft43iEUozf%2F5WcH%2BbUkZ04%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"97d77eb605da34252dd9e8b938058348"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 45087e20-2850-47cf-b1e4-c637a97efbcc
+      X-Runtime:
+      - '0.182385'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Content-Length:
+      - '47941'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"unit","attributes":{"name":"Orikan the Diviner","movement":5,"toughness":4,"sv":4,"invul_sv":4,"wounds":4,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"1","type":"weapon","attributes":{"name":"Staff
+        of Tomorrow","attacks":"2","ws":3,"strength":4,"ap":3,"damage":"D3","range":0},"abilities":{"data":[{"id":"1","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}}]}},{"id":"2","type":"unit","attributes":{"name":"Imotekh
+        the Stormlord","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"2","type":"weapon","attributes":{"name":"Gauntlet
+        of Fire","attacks":"D6","ws":0,"strength":5,"ap":1,"damage":"1","range":12},"abilities":{"data":[{"id":"2","type":"ability","attributes":{"name":"Ignores
+        Cover, Torrent","description":"Refer to game rules"}},{"id":"3","type":"ability","attributes":{"name":"Ignores
+        Cover, Torrent","description":"Refer to game rules"}}]}},{"id":"3","type":"weapon","attributes":{"name":"Staff
+        of the Destroyer","attacks":"3","ws":2,"strength":6,"ap":3,"damage":"2","range":18},"abilities":{"data":[{"id":"4","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"4","type":"weapon","attributes":{"name":"Staff
+        of the Destroyer","attacks":"4","ws":2,"strength":6,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"5","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}}]}},{"id":"3","type":"unit","attributes":{"name":"Anrakyr
+        the Traveller [Legends]","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"5","type":"weapon","attributes":{"name":"Warscythe","attacks":"4","ws":2,"strength":8,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"6","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}}]}},{"id":"4","type":"unit","attributes":{"name":"Varguard
+        Obyron [Legends]","movement":5,"toughness":5,"sv":2,"invul_sv":null,"wounds":5,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"6","type":"weapon","attributes":{"name":"Warscythe","attacks":"4","ws":2,"strength":8,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"7","type":"ability","attributes":{"name":"Devastating
+        Wounds, Precision","description":"Refer to game rules"}},{"id":"8","type":"ability","attributes":{"name":"Devastating
+        Wounds, Precision","description":"Refer to game rules"}}]}}]}},{"id":"5","type":"unit","attributes":{"name":"Illuminor
+        Szeras","movement":8,"toughness":8,"sv":2,"invul_sv":4,"wounds":9,"leadership":6,"objective_control":3,"faction_id":1},"weapons":{"data":[{"id":"7","type":"weapon","attributes":{"name":"Eldritch
+        lance","attacks":"3","ws":3,"strength":9,"ap":3,"damage":"3","range":36},"abilities":{"data":[{"id":"9","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"8","type":"weapon","attributes":{"name":"Eldritch
+        lance","attacks":"4","ws":3,"strength":9,"ap":3,"damage":"3","range":0},"abilities":{"data":[{"id":"10","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"9","type":"weapon","attributes":{"name":"Impaling
+        legs","attacks":"4","ws":3,"strength":6,"ap":1,"damage":"1","range":0},"abilities":{"data":[{"id":"11","type":"ability","attributes":{"name":"Extra
+        Attacks","description":"Refer to game rules"}}]}}]}},{"id":"6","type":"unit","attributes":{"name":"Nemesor
+        Zahndrekh [Legends]","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":6,"leadership":7,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"10","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"3","ws":3,"strength":5,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"12","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"11","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"4","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"13","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"7","type":"unit","attributes":{"name":"Trazyn
+        the Infinite","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"12","type":"weapon","attributes":{"name":"Empathic
+        Obliterator","attacks":"4","ws":2,"strength":7,"ap":0,"damage":"D3","range":0},"abilities":{"data":[{"id":"14","type":"ability","attributes":{"name":"Sustained
+        Hits D3","description":"Refer to game rules"}}]}}]}},{"id":"8","type":"unit","attributes":{"name":"Royal
+        Warden","movement":5,"toughness":5,"sv":3,"invul_sv":null,"wounds":4,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"13","type":"weapon","attributes":{"name":"Relic
+        gauss blaster","attacks":"2","ws":3,"strength":5,"ap":1,"damage":"2","range":24},"abilities":{"data":[{"id":"15","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 2","description":"Refer to game rules"}},{"id":"16","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 2","description":"Refer to game rules"}}]}},{"id":"14","type":"weapon","attributes":{"name":"Close
+        combat weapon","attacks":"4","ws":3,"strength":5,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"17","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"9","type":"unit","attributes":{"name":"Skorpekh
+        Lord","movement":8,"toughness":7,"sv":3,"invul_sv":4,"wounds":7,"leadership":6,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"15","type":"weapon","attributes":{"name":"Enmitic
+        annihilator","attacks":"2","ws":2,"strength":6,"ap":1,"damage":"1","range":18},"abilities":{"data":[{"id":"18","type":"ability","attributes":{"name":"Rapid
+        Fire 2","description":"Refer to game rules"}}]}},{"id":"16","type":"weapon","attributes":{"name":"Flensing
+        claw","attacks":"8","ws":2,"strength":6,"ap":1,"damage":"1","range":0},"abilities":{"data":[{"id":"19","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"17","type":"weapon","attributes":{"name":"Hyperphase
+        harvester","attacks":"4","ws":2,"strength":10,"ap":3,"damage":"3","range":0},"abilities":{"data":[{"id":"20","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"10","type":"unit","attributes":{"name":"Lokhust
+        Lord","movement":8,"toughness":6,"sv":3,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"18","type":"weapon","attributes":{"name":"Lord''s
+        blade","attacks":"4","ws":2,"strength":8,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"21","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}},{"id":"19","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"3","ws":2,"strength":5,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"22","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"20","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"4","ws":2,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"23","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"11","type":"unit","attributes":{"name":"Lord
+        [Legends]","movement":5,"toughness":5,"sv":3,"invul_sv":null,"wounds":4,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"21","type":"weapon","attributes":{"name":"Lord''s
+        blade","attacks":"3","ws":3,"strength":8,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"24","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}},{"id":"22","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"3","ws":3,"strength":5,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"25","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"23","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"3","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"26","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"12","type":"unit","attributes":{"name":"Catacomb
+        Command Barge","movement":10,"toughness":8,"sv":3,"invul_sv":4,"wounds":9,"leadership":6,"objective_control":3,"faction_id":1},"weapons":{"data":[]}},{"id":"13","type":"unit","attributes":{"name":"Overlord","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"24","type":"weapon","attributes":{"name":"Voidscythe","attacks":"3","ws":3,"strength":12,"ap":3,"damage":"3","range":0},"abilities":{"data":[{"id":"27","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}},{"id":"25","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"3","ws":2,"strength":5,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"28","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"26","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"4","ws":2,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"29","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"14","type":"unit","attributes":{"name":"Technomancer","movement":10,"toughness":4,"sv":4,"invul_sv":null,"wounds":4,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"27","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"3","ws":4,"strength":5,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"30","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"28","type":"weapon","attributes":{"name":"Staff
+        of light","attacks":"2","ws":4,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"31","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"15","type":"unit","attributes":{"name":"Psychomancer","movement":5,"toughness":4,"sv":4,"invul_sv":null,"wounds":4,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"29","type":"weapon","attributes":{"name":"Abyssal
+        lance","attacks":"1","ws":4,"strength":6,"ap":3,"damage":"3","range":18},"abilities":{"data":[{"id":"32","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"30","type":"weapon","attributes":{"name":"Abyssal
+        lance","attacks":"1","ws":4,"strength":6,"ap":3,"damage":"3","range":0},"abilities":{"data":[{"id":"33","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"16","type":"unit","attributes":{"name":"Chronomancer","movement":5,"toughness":4,"sv":4,"invul_sv":4,"wounds":4,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"31","type":"weapon","attributes":{"name":"Chronomancer''s
+        stave","attacks":"3","ws":4,"strength":5,"ap":1,"damage":"1","range":0},"abilities":{"data":[{"id":"34","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"32","type":"weapon","attributes":{"name":"Chronomancer''s
+        stave","attacks":"D6","ws":4,"strength":5,"ap":1,"damage":"1","range":18},"abilities":{"data":[{"id":"35","type":"ability","attributes":{"name":"Blast","description":"Refer
+        to game rules"}}]}}]}},{"id":"17","type":"unit","attributes":{"name":"Plasmancer","movement":5,"toughness":4,"sv":4,"invul_sv":null,"wounds":4,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"33","type":"weapon","attributes":{"name":"Plasmic
+        lance","attacks":"3","ws":4,"strength":7,"ap":3,"damage":"2","range":18},"abilities":{"data":[{"id":"36","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"34","type":"weapon","attributes":{"name":"Plasmic
+        lance","attacks":"2","ws":4,"strength":7,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"37","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"18","type":"unit","attributes":{"name":"Necron
+        Warriors","movement":5,"toughness":4,"sv":4,"invul_sv":null,"wounds":1,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"35","type":"weapon","attributes":{"name":"Gauss
+        flayer","attacks":"1","ws":4,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"38","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 1","description":"Refer to game rules"}},{"id":"39","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 1","description":"Refer to game rules"}}]}},{"id":"36","type":"weapon","attributes":{"name":"Gauss
+        reaper","attacks":"2","ws":4,"strength":4,"ap":1,"damage":"1","range":12},"abilities":{"data":[{"id":"40","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}}]}},{"id":"19","type":"unit","attributes":{"name":"Immortals","movement":5,"toughness":5,"sv":3,"invul_sv":null,"wounds":1,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"37","type":"weapon","attributes":{"name":"Gauss
+        blaster","attacks":"2","ws":3,"strength":5,"ap":1,"damage":"1","range":24},"abilities":{"data":[{"id":"41","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}},{"id":"38","type":"weapon","attributes":{"name":"Tesla
+        carbine","attacks":"2","ws":3,"strength":5,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"42","type":"ability","attributes":{"name":"Assault,
+        Sustained Hits 2","description":"Refer to game rules"}},{"id":"43","type":"ability","attributes":{"name":"Assault,
+        Sustained Hits 2","description":"Refer to game rules"}}]}}]}},{"id":"20","type":"unit","attributes":{"name":"Canoptek
+        Reanimator","movement":8,"toughness":6,"sv":3,"invul_sv":null,"wounds":6,"leadership":8,"objective_control":3,"faction_id":1},"weapons":{"data":[{"id":"39","type":"weapon","attributes":{"name":"Atomiser
+        beam","attacks":"3","ws":4,"strength":6,"ap":2,"damage":"1","range":12},"abilities":{"data":[{"id":"44","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"40","type":"weapon","attributes":{"name":"Reanimator''s
+        claws","attacks":"4","ws":4,"strength":5,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"45","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"21","type":"unit","attributes":{"name":"Hexmark
+        Destroyer","movement":8,"toughness":5,"sv":3,"invul_sv":null,"wounds":5,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"41","type":"weapon","attributes":{"name":"Enmitic
+        disintegrator pistols","attacks":"6","ws":2,"strength":6,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"46","type":"ability","attributes":{"name":"Ignores
+        Cover, Pistol","description":"Refer to game rules"}},{"id":"47","type":"ability","attributes":{"name":"Ignores
+        Cover, Pistol","description":"Refer to game rules"}}]}},{"id":"42","type":"weapon","attributes":{"name":"Close
+        combat weapon","attacks":"4","ws":3,"strength":5,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"48","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"22","type":"unit","attributes":{"name":"Lychguard","movement":5,"toughness":5,"sv":3,"invul_sv":4,"wounds":2,"leadership":7,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"43","type":"weapon","attributes":{"name":"Warscythe","attacks":"2","ws":3,"strength":8,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"49","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}},{"id":"44","type":"weapon","attributes":{"name":"Hyperphase
+        sword","attacks":"3","ws":3,"strength":6,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"50","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"23","type":"unit","attributes":{"name":"Deathmarks","movement":5,"toughness":5,"sv":3,"invul_sv":null,"wounds":1,"leadership":7,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"45","type":"weapon","attributes":{"name":"Synaptic
+        disintegrator","attacks":"1","ws":3,"strength":5,"ap":2,"damage":"2","range":36},"abilities":{"data":[{"id":"51","type":"ability","attributes":{"name":"Heavy,
+        Precision","description":"Refer to game rules"}},{"id":"52","type":"ability","attributes":{"name":"Heavy,
+        Precision","description":"Refer to game rules"}}]}},{"id":"46","type":"weapon","attributes":{"name":"Close
+        combat weapon","attacks":"2","ws":3,"strength":4,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"53","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"24","type":"unit","attributes":{"name":"Flayed
+        Ones","movement":5,"toughness":4,"sv":4,"invul_sv":null,"wounds":1,"leadership":7,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"47","type":"weapon","attributes":{"name":"Flayer
+        claws","attacks":"4","ws":3,"strength":4,"ap":1,"damage":"1","range":0},"abilities":{"data":[{"id":"54","type":"ability","attributes":{"name":"Sustained
+        Hits 1, Twin-linked","description":"Refer to game rules"}},{"id":"55","type":"ability","attributes":{"name":"Sustained
+        Hits 1, Twin-linked","description":"Refer to game rules"}}]}}]}},{"id":"25","type":"unit","attributes":{"name":"Cryptothralls","movement":5,"toughness":4,"sv":3,"invul_sv":null,"wounds":3,"leadership":8,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"48","type":"weapon","attributes":{"name":"Scouring
+        eye","attacks":"2","ws":4,"strength":5,"ap":1,"damage":"1","range":6},"abilities":{"data":[{"id":"56","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"49","type":"weapon","attributes":{"name":"Scythed
+        limbs","attacks":"4","ws":4,"strength":5,"ap":1,"damage":"1","range":0},"abilities":{"data":[{"id":"57","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"26","type":"unit","attributes":{"name":"Skorpekh
+        Destroyers","movement":8,"toughness":6,"sv":3,"invul_sv":null,"wounds":3,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"50","type":"weapon","attributes":{"name":"Skorpekh
+        hyperphase weapons","attacks":"4","ws":3,"strength":7,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"58","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"27","type":"unit","attributes":{"name":"Triarch
+        Stalker","movement":8,"toughness":8,"sv":3,"invul_sv":4,"wounds":12,"leadership":7,"objective_control":4,"faction_id":1},"weapons":{"data":[{"id":"51","type":"weapon","attributes":{"name":"Stalker''s
+        forelimbs","attacks":"4","ws":3,"strength":7,"ap":1,"damage":"3","range":0},"abilities":{"data":[{"id":"59","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"28","type":"unit","attributes":{"name":"C''tan
+        Shard of the Deceiver","movement":6,"toughness":11,"sv":4,"invul_sv":4,"wounds":12,"leadership":6,"objective_control":6,"faction_id":1},"weapons":{"data":[{"id":"52","type":"weapon","attributes":{"name":"Cosmic
+        insanity","attacks":"6","ws":2,"strength":6,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"60","type":"ability","attributes":{"name":"Anti-CHARACTER
+        4+, Devastating Wounds, Precision","description":"Refer to game rules"}},{"id":"61","type":"ability","attributes":{"name":"Anti-CHARACTER
+        4+, Devastating Wounds, Precision","description":"Refer to game rules"}},{"id":"62","type":"ability","attributes":{"name":"Anti-CHARACTER
+        4+, Devastating Wounds, Precision","description":"Refer to game rules"}}]}},{"id":"53","type":"weapon","attributes":{"name":"Golden
+        fists","attacks":"8","ws":2,"strength":8,"ap":3,"damage":"3","range":0},"abilities":{"data":[{"id":"63","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"29","type":"unit","attributes":{"name":"C''tan
+        Shard of the Nightbringer","movement":6,"toughness":11,"sv":4,"invul_sv":4,"wounds":12,"leadership":6,"objective_control":4,"faction_id":1},"weapons":{"data":[{"id":"54","type":"weapon","attributes":{"name":"Gaze
+        of death","attacks":"D3","ws":2,"strength":12,"ap":2,"damage":"D6+3","range":18},"abilities":{"data":[{"id":"64","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"55","type":"weapon","attributes":{"name":"➤ Scythe
+        of the Nightbringer - strike","attacks":"6","ws":2,"strength":14,"ap":4,"damage":"D6+2","range":0},"abilities":{"data":[{"id":"65","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}},{"id":"56","type":"weapon","attributes":{"name":"➤
+        Scythe of the Nightbringer - sweep","attacks":"14","ws":2,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"66","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"30","type":"unit","attributes":{"name":"C''tan
+        Shard of the Void Dragon","movement":6,"toughness":11,"sv":4,"invul_sv":4,"wounds":12,"leadership":6,"objective_control":4,"faction_id":1},"weapons":{"data":[{"id":"57","type":"weapon","attributes":{"name":"Spear
+        of the Void Dragon","attacks":"1","ws":2,"strength":4,"ap":3,"damage":"D6+2","range":12},"abilities":{"data":[{"id":"67","type":"ability","attributes":{"name":"Anti-VEHICLE
+        2+","description":"Refer to game rules"}}]}},{"id":"58","type":"weapon","attributes":{"name":"➤
+        Spear of the Void Dragon - strike","attacks":"5","ws":2,"strength":12,"ap":3,"damage":"D6+2","range":0},"abilities":{"data":[{"id":"68","type":"ability","attributes":{"name":"Anti-VEHICLE
+        2+","description":"Refer to game rules"}}]}},{"id":"59","type":"weapon","attributes":{"name":"➤
+        Spear of the Void Dragon - sweep","attacks":"10","ws":2,"strength":8,"ap":1,"damage":"2","range":0},"abilities":{"data":[{"id":"69","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"60","type":"weapon","attributes":{"name":"Voltaic
+        storm","attacks":"D6+3","ws":2,"strength":7,"ap":1,"damage":"2","range":18},"abilities":{"data":[{"id":"70","type":"ability","attributes":{"name":"Blast,
+        Sustained Hits 2","description":"Refer to game rules"}},{"id":"71","type":"ability","attributes":{"name":"Blast,
+        Sustained Hits 2","description":"Refer to game rules"}}]}},{"id":"61","type":"weapon","attributes":{"name":"Canoptek
+        tail blades","attacks":"6","ws":2,"strength":6,"ap":1,"damage":"1","range":0},"abilities":{"data":[{"id":"72","type":"ability","attributes":{"name":"Extra
+        Attacks","description":"Refer to game rules"}}]}}]}},{"id":"31","type":"unit","attributes":{"name":"Transcendant
+        C''tan","movement":6,"toughness":11,"sv":4,"invul_sv":4,"wounds":12,"leadership":6,"objective_control":4,"faction_id":1},"weapons":{"data":[{"id":"62","type":"weapon","attributes":{"name":"Seismic
+        assault","attacks":"6","ws":2,"strength":8,"ap":2,"damage":"D3","range":12},"abilities":{"data":[{"id":"73","type":"ability","attributes":{"name":"Assault,
+        Sustained Hits 1","description":"Refer to game rules"}},{"id":"74","type":"ability","attributes":{"name":"Assault,
+        Sustained Hits 1","description":"Refer to game rules"}}]}},{"id":"63","type":"weapon","attributes":{"name":"Crackling
+        tendrils","attacks":"8","ws":2,"strength":9,"ap":3,"damage":"D6","range":0},"abilities":{"data":[{"id":"75","type":"ability","attributes":{"name":"Sustained
+        Hits 1","description":"Refer to game rules"}}]}}]}},{"id":"32","type":"unit","attributes":{"name":"Canoptek
+        Spyders","movement":5,"toughness":7,"sv":3,"invul_sv":null,"wounds":6,"leadership":8,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"64","type":"weapon","attributes":{"name":"Automaton
+        claws","attacks":"5","ws":4,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"76","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"65","type":"weapon","attributes":{"name":"Particle
+        beamer","attacks":"D6","ws":3,"strength":6,"ap":0,"damage":"1","range":18},"abilities":{"data":[{"id":"77","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}},{"id":"78","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}}]}}]}},{"id":"33","type":"unit","attributes":{"name":"Canoptek
+        Scarab Swarms","movement":10,"toughness":2,"sv":6,"invul_sv":null,"wounds":4,"leadership":8,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"66","type":"weapon","attributes":{"name":"Feeder
+        mandibles","attacks":"6","ws":5,"strength":2,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"79","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}}]}},{"id":"34","type":"unit","attributes":{"name":"Ophydian
+        Destroyers","movement":10,"toughness":5,"sv":4,"invul_sv":null,"wounds":3,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"67","type":"weapon","attributes":{"name":"Ophydian
+        hyperphase weapons","attacks":"5","ws":3,"strength":4,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"80","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"35","type":"unit","attributes":{"name":"Tomb
+        Blades","movement":0,"toughness":0,"sv":0,"invul_sv":null,"wounds":0,"leadership":0,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"68","type":"weapon","attributes":{"name":"Twin
+        gauss blaster","attacks":"2","ws":3,"strength":5,"ap":1,"damage":"1","range":24},"abilities":{"data":[{"id":"81","type":"ability","attributes":{"name":"Lethal
+        Hits, Twin-linked","description":"Refer to game rules"}},{"id":"82","type":"ability","attributes":{"name":"Lethal
+        Hits, Twin-linked","description":"Refer to game rules"}}]}},{"id":"69","type":"weapon","attributes":{"name":"Particle
+        beamer","attacks":"D6","ws":3,"strength":5,"ap":0,"damage":"1","range":18},"abilities":{"data":[{"id":"83","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}},{"id":"84","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}}]}},{"id":"70","type":"weapon","attributes":{"name":"Twin
+        tesla carbine","attacks":"2","ws":3,"strength":5,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"85","type":"ability","attributes":{"name":"Assault,
+        Sustained Hits 2, Twin-linked","description":"Refer to game rules"}},{"id":"86","type":"ability","attributes":{"name":"Assault,
+        Sustained Hits 2, Twin-linked","description":"Refer to game rules"}},{"id":"87","type":"ability","attributes":{"name":"Assault,
+        Sustained Hits 2, Twin-linked","description":"Refer to game rules"}}]}}]}},{"id":"36","type":"unit","attributes":{"name":"Triarch
+        Praetorians","movement":10,"toughness":5,"sv":3,"invul_sv":null,"wounds":2,"leadership":7,"objective_control":1,"faction_id":1},"weapons":{"data":[{"id":"71","type":"weapon","attributes":{"name":"Rod
+        of covenant","attacks":"3","ws":3,"strength":5,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"88","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"72","type":"weapon","attributes":{"name":"Rod of
+        covenant","attacks":"1","ws":3,"strength":5,"ap":2,"damage":"2","range":12},"abilities":{"data":[{"id":"89","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"73","type":"weapon","attributes":{"name":"Particle
+        caster","attacks":"3","ws":3,"strength":5,"ap":0,"damage":"1","range":12},"abilities":{"data":[{"id":"90","type":"ability","attributes":{"name":"Devastating
+        Wounds, Pistol","description":"Refer to game rules"}},{"id":"91","type":"ability","attributes":{"name":"Devastating
+        Wounds, Pistol","description":"Refer to game rules"}}]}},{"id":"74","type":"weapon","attributes":{"name":"Voidblade","attacks":"4","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"92","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"37","type":"unit","attributes":{"name":"Canoptek
+        Wraiths","movement":10,"toughness":6,"sv":3,"invul_sv":4,"wounds":4,"leadership":8,"objective_control":2,"faction_id":1},"weapons":{"data":[]}},{"id":"38","type":"unit","attributes":{"name":"Annihilation
+        Barge","movement":10,"toughness":8,"sv":3,"invul_sv":4,"wounds":9,"leadership":7,"objective_control":3,"faction_id":1},"weapons":{"data":[{"id":"75","type":"weapon","attributes":{"name":"Twin
+        tesla destructor","attacks":"6","ws":3,"strength":8,"ap":0,"damage":"2","range":36},"abilities":{"data":[{"id":"93","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}},{"id":"94","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}}]}}]}},{"id":"39","type":"unit","attributes":{"name":"Doomsday
+        Ark","movement":10,"toughness":9,"sv":3,"invul_sv":4,"wounds":14,"leadership":7,"objective_control":5,"faction_id":1},"weapons":{"data":[{"id":"76","type":"weapon","attributes":{"name":"Doomsday
+        cannon","attacks":"D6+1","ws":3,"strength":18,"ap":4,"damage":"4","range":72},"abilities":{"data":[{"id":"95","type":"ability","attributes":{"name":"Blast,
+        Heavy","description":"Refer to game rules"}},{"id":"96","type":"ability","attributes":{"name":"Blast,
+        Heavy","description":"Refer to game rules"}}]}},{"id":"77","type":"weapon","attributes":{"name":"Gauss
+        flayer array","attacks":"5","ws":3,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"97","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 5","description":"Refer to game rules"}},{"id":"98","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 5","description":"Refer to game rules"}}]}}]}},{"id":"40","type":"unit","attributes":{"name":"Lokhust
+        Destroyers","movement":8,"toughness":6,"sv":3,"invul_sv":null,"wounds":3,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"78","type":"weapon","attributes":{"name":"Gauss
+        cannon","attacks":"3","ws":3,"strength":5,"ap":2,"damage":"2","range":24},"abilities":{"data":[{"id":"99","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}},{"id":"79","type":"weapon","attributes":{"name":"Close
+        combat weapon","attacks":"2","ws":3,"strength":4,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"100","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"41","type":"unit","attributes":{"name":"Lokhust
+        Heavy Destroyers","movement":8,"toughness":6,"sv":3,"invul_sv":null,"wounds":4,"leadership":7,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"80","type":"weapon","attributes":{"name":"Enmitic
+        exterminator","attacks":"6","ws":3,"strength":6,"ap":1,"damage":"1","range":36},"abilities":{"data":[{"id":"101","type":"ability","attributes":{"name":"Heavy,
+        Rapid Fire 6, Sustained Hits 1","description":"Refer to game rules"}},{"id":"102","type":"ability","attributes":{"name":"Heavy,
+        Rapid Fire 6, Sustained Hits 1","description":"Refer to game rules"}},{"id":"103","type":"ability","attributes":{"name":"Heavy,
+        Rapid Fire 6, Sustained Hits 1","description":"Refer to game rules"}}]}},{"id":"81","type":"weapon","attributes":{"name":"Gauss
+        destructor","attacks":"1","ws":3,"strength":14,"ap":4,"damage":"6","range":48},"abilities":{"data":[{"id":"104","type":"ability","attributes":{"name":"Heavy,
+        Lethal Hits","description":"Refer to game rules"}},{"id":"105","type":"ability","attributes":{"name":"Heavy,
+        Lethal Hits","description":"Refer to game rules"}}]}}]}},{"id":"42","type":"unit","attributes":{"name":"Canoptek
+        Doomstalker","movement":8,"toughness":8,"sv":3,"invul_sv":4,"wounds":12,"leadership":8,"objective_control":4,"faction_id":1},"weapons":{"data":[{"id":"82","type":"weapon","attributes":{"name":"Doomsday
+        blaster","attacks":"D6+1","ws":4,"strength":14,"ap":3,"damage":"3","range":48},"abilities":{"data":[{"id":"106","type":"ability","attributes":{"name":"Blast,
+        Heavy","description":"Refer to game rules"}},{"id":"107","type":"ability","attributes":{"name":"Blast,
+        Heavy","description":"Refer to game rules"}}]}},{"id":"83","type":"weapon","attributes":{"name":"Twin
+        gauss flayer","attacks":"1","ws":4,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"108","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 1, Twin-linked","description":"Refer to game rules"}},{"id":"109","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 1, Twin-linked","description":"Refer to game rules"}},{"id":"110","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 1, Twin-linked","description":"Refer to game rules"}}]}},{"id":"84","type":"weapon","attributes":{"name":"Doomstalker
+        limbs","attacks":"3","ws":4,"strength":6,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"111","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"43","type":"unit","attributes":{"name":"Ghost
+        Ark","movement":10,"toughness":9,"sv":3,"invul_sv":4,"wounds":14,"leadership":7,"objective_control":3,"faction_id":1},"weapons":{"data":[{"id":"85","type":"weapon","attributes":{"name":"Gauss
+        flayer array","attacks":"5","ws":3,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"112","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 5","description":"Refer to game rules"}},{"id":"113","type":"ability","attributes":{"name":"Lethal
+        Hits, Rapid Fire 5","description":"Refer to game rules"}}]}}]}},{"id":"44","type":"unit","attributes":{"name":"Night
+        Scythe","movement":20,"toughness":9,"sv":3,"invul_sv":null,"wounds":12,"leadership":7,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"86","type":"weapon","attributes":{"name":"Twin
+        tesla destructor","attacks":"6","ws":3,"strength":8,"ap":0,"damage":"2","range":36},"abilities":{"data":[{"id":"114","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}},{"id":"115","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}}]}}]}},{"id":"45","type":"unit","attributes":{"name":"Doom
+        Scythe","movement":20,"toughness":9,"sv":3,"invul_sv":null,"wounds":12,"leadership":7,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"87","type":"weapon","attributes":{"name":"Heavy
+        death ray","attacks":"3","ws":3,"strength":16,"ap":4,"damage":"D6+1","range":36},"abilities":{"data":[{"id":"116","type":"ability","attributes":{"name":"Sustained
+        Hits D3","description":"Refer to game rules"}}]}},{"id":"88","type":"weapon","attributes":{"name":"Twin
+        tesla destructor","attacks":"6","ws":3,"strength":8,"ap":0,"damage":"2","range":36},"abilities":{"data":[{"id":"117","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}},{"id":"118","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}}]}}]}},{"id":"46","type":"unit","attributes":{"name":"Obelisk","movement":8,"toughness":13,"sv":2,"invul_sv":null,"wounds":24,"leadership":7,"objective_control":8,"faction_id":1},"weapons":{"data":[{"id":"89","type":"weapon","attributes":{"name":"Tesla
+        sphere","attacks":"6","ws":3,"strength":7,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"119","type":"ability","attributes":{"name":"Anti-FLY
+        4+, Sustained Hits 2","description":"Refer to game rules"}},{"id":"120","type":"ability","attributes":{"name":"Anti-FLY
+        4+, Sustained Hits 2","description":"Refer to game rules"}}]}},{"id":"90","type":"weapon","attributes":{"name":"Armoured
+        bulk","attacks":"6","ws":4,"strength":8,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"121","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"47","type":"unit","attributes":{"name":"Tesseract
+        Vault","movement":8,"toughness":12,"sv":2,"invul_sv":4,"wounds":24,"leadership":7,"objective_control":8,"faction_id":1},"weapons":{"data":[{"id":"91","type":"weapon","attributes":{"name":"Tesla
+        sphere","attacks":"6","ws":3,"strength":7,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"122","type":"ability","attributes":{"name":"Sustained
+        Hits 2","description":"Refer to game rules"}}]}},{"id":"92","type":"weapon","attributes":{"name":"Armoured
+        bulk","attacks":"6","ws":4,"strength":8,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"123","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"93","type":"weapon","attributes":{"name":"Cosmic
+        fire","attacks":"3D6","ws":0,"strength":6,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"124","type":"ability","attributes":{"name":"Ignores
+        Cover, Devastating Wounds, Torrent","description":"Refer to game rules"}},{"id":"125","type":"ability","attributes":{"name":"Ignores
+        Cover, Devastating Wounds, Torrent","description":"Refer to game rules"}},{"id":"126","type":"ability","attributes":{"name":"Ignores
+        Cover, Devastating Wounds, Torrent","description":"Refer to game rules"}}]}},{"id":"94","type":"weapon","attributes":{"name":"Time''s
+        arrow","attacks":"1","ws":2,"strength":3,"ap":2,"damage":"6","range":24},"abilities":{"data":[{"id":"127","type":"ability","attributes":{"name":"Anti-CHARACTER
+        4+, Devastating Wounds, Precision","description":"Refer to game rules"}},{"id":"128","type":"ability","attributes":{"name":"Anti-CHARACTER
+        4+, Devastating Wounds, Precision","description":"Refer to game rules"}},{"id":"129","type":"ability","attributes":{"name":"Anti-CHARACTER
+        4+, Devastating Wounds, Precision","description":"Refer to game rules"}}]}},{"id":"95","type":"weapon","attributes":{"name":"Antimatter
+        meteor","attacks":"D6+3","ws":3,"strength":10,"ap":3,"damage":"3","range":24},"abilities":{"data":[{"id":"130","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds, Indirect Fire","description":"Refer to game rules"}},{"id":"131","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds, Indirect Fire","description":"Refer to game rules"}},{"id":"132","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds, Indirect Fire","description":"Refer to game rules"}}]}}]}},{"id":"48","type":"unit","attributes":{"name":"Monolith","movement":8,"toughness":13,"sv":2,"invul_sv":null,"wounds":22,"leadership":7,"objective_control":8,"faction_id":1},"weapons":{"data":[{"id":"96","type":"weapon","attributes":{"name":"Particle
+        whip","attacks":"3D6","ws":3,"strength":8,"ap":1,"damage":"2","range":24},"abilities":{"data":[{"id":"133","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}},{"id":"134","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}}]}},{"id":"97","type":"weapon","attributes":{"name":"Portal
+        of exile","attacks":"6","ws":2,"strength":8,"ap":2,"damage":"3","range":0},"abilities":{"data":[{"id":"135","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"49","type":"unit","attributes":{"name":"The
+        Silent King","movement":8,"toughness":10,"sv":2,"invul_sv":4,"wounds":16,"leadership":6,"objective_control":6,"faction_id":1},"weapons":{"data":[{"id":"98","type":"weapon","attributes":{"name":"Sceptre
+        of Eternal Glory","attacks":"2","ws":2,"strength":10,"ap":3,"damage":"3","range":24},"abilities":{"data":[{"id":"136","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}},{"id":"99","type":"weapon","attributes":{"name":"Staff
+        of Stars","attacks":"12","ws":2,"strength":6,"ap":1,"damage":"1","range":24},"abilities":{"data":[{"id":"137","type":"ability","attributes":{"name":"Indirect
+        Fire","description":"Refer to game rules"}}]}},{"id":"100","type":"weapon","attributes":{"name":"Weapons
+        of the Final Triarch","attacks":"12","ws":2,"strength":8,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"138","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}},{"id":"101","type":"weapon","attributes":{"name":"Annihilator
+        beam","attacks":"1","ws":2,"strength":14,"ap":4,"damage":"6","range":24},"abilities":{"data":[{"id":"139","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"102","type":"weapon","attributes":{"name":"Armoured
+        bulk","attacks":"1","ws":4,"strength":4,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"140","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"50","type":"unit","attributes":{"name":"Convergence
+        of Dominion","movement":0,"toughness":9,"sv":3,"invul_sv":null,"wounds":7,"leadership":8,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"103","type":"weapon","attributes":{"name":"Transdimensional
+        abductor","attacks":"3","ws":4,"strength":6,"ap":2,"damage":"3","range":18},"abilities":{"data":[{"id":"141","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"51","type":"unit","attributes":{"name":"Canoptek
+        Tomb Stalker [Legends]","movement":10,"toughness":9,"sv":3,"invul_sv":4,"wounds":9,"leadership":8,"objective_control":3,"faction_id":1},"weapons":{"data":[{"id":"104","type":"weapon","attributes":{"name":"Gauss
+        slicers","attacks":"8","ws":4,"strength":5,"ap":1,"damage":"1","range":24},"abilities":{"data":[{"id":"142","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}},{"id":"105","type":"weapon","attributes":{"name":"Tomb
+        Stalker claws","attacks":"6","ws":4,"strength":6,"ap":1,"damage":"2","range":0},"abilities":{"data":[{"id":"143","type":"ability","attributes":{"name":"Sustained
+        Hits 1","description":"Refer to game rules"}}]}}]}},{"id":"52","type":"unit","attributes":{"name":"Canoptek
+        Tomb Sentinel [Legends]","movement":10,"toughness":9,"sv":3,"invul_sv":4,"wounds":9,"leadership":8,"objective_control":3,"faction_id":1},"weapons":{"data":[{"id":"106","type":"weapon","attributes":{"name":"Exile
+        cannon","attacks":"D6+1","ws":4,"strength":10,"ap":2,"damage":"2","range":18},"abilities":{"data":[{"id":"144","type":"ability","attributes":{"name":"Blast","description":"Refer
+        to game rules"}}]}},{"id":"107","type":"weapon","attributes":{"name":"Tomb
+        Sentinel claws","attacks":"6","ws":4,"strength":6,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"145","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"53","type":"unit","attributes":{"name":"Canoptek
+        Acanthrites [Legends]","movement":12,"toughness":5,"sv":3,"invul_sv":null,"wounds":2,"leadership":8,"objective_control":2,"faction_id":1},"weapons":{"data":[{"id":"108","type":"weapon","attributes":{"name":"Cutting
+        beam","attacks":"1","ws":4,"strength":9,"ap":4,"damage":"D6","range":12},"abilities":{"data":[{"id":"146","type":"ability","attributes":{"name":"Melta
+        2","description":"Refer to game rules"}}]}},{"id":"109","type":"weapon","attributes":{"name":"Voidblade","attacks":"3","ws":4,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"147","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"54","type":"unit","attributes":{"name":"Tesseract
+        Ark [Legends]","movement":9,"toughness":9,"sv":3,"invul_sv":4,"wounds":10,"leadership":6,"objective_control":3,"faction_id":1},"weapons":{"data":[{"id":"110","type":"weapon","attributes":{"name":"➤
+        Tesseract singularity chamber - particle","attacks":"D6+3","ws":0,"strength":6,"ap":1,"damage":"2","range":12},"abilities":{"data":[{"id":"148","type":"ability","attributes":{"name":"Ignores
+        Cover, Torrent","description":"Refer to game rules"}},{"id":"149","type":"ability","attributes":{"name":"Ignores
+        Cover, Torrent","description":"Refer to game rules"}}]}},{"id":"111","type":"weapon","attributes":{"name":"➤
+        Tesseract singularity chamber - seismic lash","attacks":"D3","ws":3,"strength":9,"ap":3,"damage":"D6+1","range":36},"abilities":{"data":[{"id":"150","type":"ability","attributes":{"name":"Blast","description":"Refer
+        to game rules"}}]}}]}},{"id":"55","type":"unit","attributes":{"name":"Seraptek
+        Heavy Construct","movement":10,"toughness":12,"sv":3,"invul_sv":5,"wounds":24,"leadership":7,"objective_control":10,"faction_id":1},"weapons":{"data":[{"id":"112","type":"weapon","attributes":{"name":"➤
+        Titanic forelimbs - strike","attacks":"6","ws":3,"strength":14,"ap":3,"damage":"5","range":0},"abilities":{"data":[{"id":"151","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"113","type":"weapon","attributes":{"name":"➤ Titanic
+        forelimbs - sweep","attacks":"12","ws":3,"strength":8,"ap":1,"damage":"2","range":0},"abilities":{"data":[{"id":"152","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"56","type":"unit","attributes":{"name":"Gauss
+        Pylon [Legends]","movement":0,"toughness":12,"sv":3,"invul_sv":5,"wounds":22,"leadership":7,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"114","type":"weapon","attributes":{"name":"Gauss
+        annihilator","attacks":"1","ws":4,"strength":16,"ap":4,"damage":"D6+6","range":120},"abilities":{"data":[{"id":"153","type":"ability","attributes":{"name":"Anti-FLY
+        2+, Lethal Hits","description":"Refer to game rules"}},{"id":"154","type":"ability","attributes":{"name":"Anti-FLY
+        2+, Lethal Hits","description":"Refer to game rules"}}]}},{"id":"115","type":"weapon","attributes":{"name":"Tesla
+        arc","attacks":"6","ws":4,"strength":4,"ap":0,"damage":"1","range":6},"abilities":{"data":[{"id":"155","type":"ability","attributes":{"name":"Sustained
+        Hits 2","description":"Refer to game rules"}}]}}]}},{"id":"57","type":"unit","attributes":{"name":"Sentry
+        Pylon [Legends]","movement":0,"toughness":8,"sv":3,"invul_sv":null,"wounds":10,"leadership":7,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"116","type":"weapon","attributes":{"name":"Focused
+        death ray","attacks":"6","ws":4,"strength":8,"ap":2,"damage":"2","range":36},"abilities":{"data":[{"id":"156","type":"ability","attributes":{"name":"Sustained
+        Hits 2","description":"Refer to game rules"}}]}},{"id":"117","type":"weapon","attributes":{"name":"Gauss
+        exterminator","attacks":"1","ws":4,"strength":14,"ap":3,"damage":"6","range":48},"abilities":{"data":[{"id":"157","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}},{"id":"118","type":"weapon","attributes":{"name":"Heat
+        cannon","attacks":"2","ws":4,"strength":9,"ap":4,"damage":"D6","range":36},"abilities":{"data":[{"id":"158","type":"ability","attributes":{"name":"Melta
+        4","description":"Refer to game rules"}}]}}]}},{"id":"58","type":"unit","attributes":{"name":"Night
+        Shroud [Legends]","movement":20,"toughness":9,"sv":3,"invul_sv":null,"wounds":14,"leadership":7,"objective_control":0,"faction_id":1},"weapons":{"data":[{"id":"119","type":"weapon","attributes":{"name":"Twin
+        tesla destructor","attacks":"6","ws":3,"strength":8,"ap":0,"damage":"2","range":36},"abilities":{"data":[{"id":"159","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}},{"id":"160","type":"ability","attributes":{"name":"Sustained
+        Hits 2, Twin-linked","description":"Refer to game rules"}}]}}]}},{"id":"59","type":"unit","attributes":{"name":"Overlord
+        with Translocation Shroud","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":1,"faction_id":1},"weapons":{"data":[]}}]}'
+  recorded_at: Wed, 31 Jul 2024 17:30:20 GMT
+- request:
+    method: get
+    uri: https://wh40k-battlegrounds-be-ce09c759206c.herokuapp.com/api/v1/factions/2/units
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 31 Jul 2024 17:30:21 GMT
+      Report-To:
+      - '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722447021&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=i8igkoq%2BN6nzH6wQQu90%2B%2FLUyHEmd%2B8Bic6uecQR7eU%3D"}]}'
+      Reporting-Endpoints:
+      - heroku-nel=https://nel.heroku.com/reports?ts=1722447021&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=i8igkoq%2BN6nzH6wQQu90%2B%2FLUyHEmd%2B8Bic6uecQR7eU%3D
+      Nel:
+      - '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"1c4eab5ca177898bcabf27557ab17cb4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cf704cf8-0a59-4098-b6e0-bcd079b42fe3
+      X-Runtime:
+      - '0.095461'
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Content-Length:
+      - '24392'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"60","type":"unit","attributes":{"name":"Azrael","movement":6,"toughness":4,"sv":2,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"120","type":"weapon","attributes":{"name":"Lion''s
+        Wrath","attacks":"2","ws":2,"strength":8,"ap":3,"damage":"2","range":24},"abilities":{"data":[{"id":"161","type":"ability","attributes":{"name":"Anti-Infantry
+        4+, Devastating Wounds, Rapid Fire 1","description":"Refer to game rules"}},{"id":"162","type":"ability","attributes":{"name":"Anti-Infantry
+        4+, Devastating Wounds, Rapid Fire 1","description":"Refer to game rules"}},{"id":"163","type":"ability","attributes":{"name":"Anti-Infantry
+        4+, Devastating Wounds, Rapid Fire 1","description":"Refer to game rules"}}]}},{"id":"121","type":"weapon","attributes":{"name":"The
+        Sword of Secrets","attacks":"6","ws":2,"strength":6,"ap":4,"damage":"2","range":0},"abilities":{"data":[{"id":"164","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}}]}},{"id":"61","type":"unit","attributes":{"name":"Belial","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":6,"leadership":6,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"122","type":"weapon","attributes":{"name":"Master-crafted
+        storm bolter","attacks":"2","ws":2,"strength":4,"ap":0,"damage":"2","range":24},"abilities":{"data":[{"id":"165","type":"ability","attributes":{"name":"Precision,
+        Rapid Fire 2","description":"Refer to game rules"}},{"id":"166","type":"ability","attributes":{"name":"Precision,
+        Rapid Fire 2","description":"Refer to game rules"}}]}},{"id":"123","type":"weapon","attributes":{"name":"The
+        Sword of Silence","attacks":"6","ws":2,"strength":6,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"167","type":"ability","attributes":{"name":"Precision","description":"Refer
+        to game rules"}}]}}]}},{"id":"62","type":"unit","attributes":{"name":"Sammael","movement":12,"toughness":5,"sv":3,"invul_sv":4,"wounds":7,"leadership":6,"objective_control":2,"faction_id":2},"weapons":{"data":[{"id":"124","type":"weapon","attributes":{"name":"Bolt
+        Pistol","attacks":"1","ws":2,"strength":4,"ap":0,"damage":"1","range":12},"abilities":{"data":[{"id":"168","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"125","type":"weapon","attributes":{"name":"Master-crafted
+        plasma cannon","attacks":"D3","ws":2,"strength":8,"ap":3,"damage":"2","range":36},"abilities":{"data":[{"id":"169","type":"ability","attributes":{"name":"Blast","description":"Refer
+        to game rules"}}]}},{"id":"126","type":"weapon","attributes":{"name":"Twin
+        storm bolter","attacks":"2","ws":2,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"170","type":"ability","attributes":{"name":"Rapid
+        Fire 2, Twin-Linked","description":"Refer to game rules"}},{"id":"171","type":"ability","attributes":{"name":"Rapid
+        Fire 2, Twin-Linked","description":"Refer to game rules"}}]}},{"id":"127","type":"weapon","attributes":{"name":"The
+        Raven Sword","attacks":"6","ws":2,"strength":6,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"172","type":"ability","attributes":{"name":"Sustained
+        Hits 2","description":"Refer to game rules"}}]}}]}},{"id":"63","type":"unit","attributes":{"name":"Ezekiel","movement":6,"toughness":4,"sv":2,"invul_sv":4,"wounds":4,"leadership":6,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"128","type":"weapon","attributes":{"name":"The
+        Deliverer","attacks":"1","ws":2,"strength":4,"ap":1,"damage":"2","range":12},"abilities":{"data":[{"id":"173","type":"ability","attributes":{"name":"Pistol,
+        Precision","description":"Refer to game rules"}},{"id":"174","type":"ability","attributes":{"name":"Pistol,
+        Precision","description":"Refer to game rules"}}]}},{"id":"129","type":"weapon","attributes":{"name":"➤
+        Mind Wipe - witchfire","attacks":"1","ws":2,"strength":6,"ap":2,"damage":"D6","range":12},"abilities":{"data":[{"id":"175","type":"ability","attributes":{"name":"Devastating
+        Wounds, Precision, Psychic","description":"Refer to game rules"}},{"id":"176","type":"ability","attributes":{"name":"Devastating
+        Wounds, Precision, Psychic","description":"Refer to game rules"}},{"id":"177","type":"ability","attributes":{"name":"Devastating
+        Wounds, Precision, Psychic","description":"Refer to game rules"}}]}},{"id":"130","type":"weapon","attributes":{"name":"➤
+        Mind Wipe - focussed witchfire","attacks":"1","ws":2,"strength":6,"ap":2,"damage":"D6","range":12},"abilities":{"data":[{"id":"178","type":"ability","attributes":{"name":"Anti-Character
+        4+, Devastating Wounds, Hazardous, Precision, Psychic","description":"Refer
+        to game rules"}},{"id":"179","type":"ability","attributes":{"name":"Anti-Character
+        4+, Devastating Wounds, Hazardous, Precision, Psychic","description":"Refer
+        to game rules"}},{"id":"180","type":"ability","attributes":{"name":"Anti-Character
+        4+, Devastating Wounds, Hazardous, Precision, Psychic","description":"Refer
+        to game rules"}},{"id":"181","type":"ability","attributes":{"name":"Anti-Character
+        4+, Devastating Wounds, Hazardous, Precision, Psychic","description":"Refer
+        to game rules"}},{"id":"182","type":"ability","attributes":{"name":"Anti-Character
+        4+, Devastating Wounds, Hazardous, Precision, Psychic","description":"Refer
+        to game rules"}}]}},{"id":"131","type":"weapon","attributes":{"name":"Traitor''s
+        Bane","attacks":"4","ws":2,"strength":6,"ap":2,"damage":"D3","range":0},"abilities":{"data":[{"id":"183","type":"ability","attributes":{"name":"Anti-Chaos
+        2+, Psychic","description":"Refer to game rules"}},{"id":"184","type":"ability","attributes":{"name":"Anti-Chaos
+        2+, Psychic","description":"Refer to game rules"}}]}}]}},{"id":"64","type":"unit","attributes":{"name":"Asmodai","movement":6,"toughness":4,"sv":3,"invul_sv":4,"wounds":4,"leadership":5,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"132","type":"weapon","attributes":{"name":"Heavy
+        Bolt Pistol","attacks":"1","ws":3,"strength":4,"ap":1,"damage":"1","range":18},"abilities":{"data":[{"id":"185","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"133","type":"weapon","attributes":{"name":"➤ Crozius
+        Arcanum and Power Weapon - strike","attacks":"5","ws":2,"strength":6,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"186","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"134","type":"weapon","attributes":{"name":"➤ Crozius
+        Arcanum and Power Weapon - sweep","attacks":"8","ws":2,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"187","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"65","type":"unit","attributes":{"name":"Lion
+        El''Jonson","movement":8,"toughness":9,"sv":2,"invul_sv":3,"wounds":10,"leadership":5,"objective_control":4,"faction_id":2},"weapons":{"data":[{"id":"135","type":"weapon","attributes":{"name":"➤
+        Arma Luminis - bolt","attacks":"4","ws":2,"strength":4,"ap":1,"damage":"2","range":12},"abilities":{"data":[{"id":"188","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"136","type":"weapon","attributes":{"name":"➤ Arma
+        Luminis - plasma","attacks":"2","ws":2,"strength":8,"ap":3,"damage":"2","range":12},"abilities":{"data":[{"id":"189","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"137","type":"weapon","attributes":{"name":"➤ Fealty
+        - strike","attacks":"8","ws":2,"strength":12,"ap":4,"damage":"4","range":0},"abilities":{"data":[{"id":"190","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}},{"id":"138","type":"weapon","attributes":{"name":"➤
+        Fealty - sweep","attacks":"16","ws":2,"strength":6,"ap":3,"damage":"1","range":0},"abilities":{"data":[{"id":"191","type":"ability","attributes":{"name":"Sustained
+        Hits 1","description":"Refer to game rules"}}]}}]}},{"id":"66","type":"unit","attributes":{"name":"Lazarus","movement":6,"toughness":4,"sv":3,"invul_sv":4,"wounds":5,"leadership":6,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"139","type":"weapon","attributes":{"name":"Bolt
+        pistol","attacks":"1","ws":2,"strength":4,"ap":0,"damage":"1","range":12},"abilities":{"data":[{"id":"192","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"140","type":"weapon","attributes":{"name":"Enmity’s
+        Edge","attacks":"6","ws":2,"strength":6,"ap":3,"damage":"2","range":0},"abilities":{"data":[{"id":"193","type":"ability","attributes":{"name":"Anti-Psyker
+        2+","description":"Refer to game rules"}}]}}]}},{"id":"67","type":"unit","attributes":{"name":"Nephilim
+        Jetfighter","movement":20,"toughness":8,"sv":3,"invul_sv":5,"wounds":11,"leadership":6,"objective_control":0,"faction_id":2},"weapons":{"data":[{"id":"141","type":"weapon","attributes":{"name":"Blacksword
+        missiles","attacks":"2","ws":3,"strength":8,"ap":2,"damage":"D6","range":36},"abilities":{"data":[{"id":"194","type":"ability","attributes":{"name":"Anti-Fly
+        2+","description":"Refer to game rules"}}]}},{"id":"142","type":"weapon","attributes":{"name":"Twin
+        heavy bolter","attacks":"3","ws":3,"strength":5,"ap":1,"damage":"2","range":36},"abilities":{"data":[{"id":"195","type":"ability","attributes":{"name":"Sustained
+        Hits 1, Twin-Linked","description":"Refer to game rules"}},{"id":"196","type":"ability","attributes":{"name":"Sustained
+        Hits 1, Twin-Linked","description":"Refer to game rules"}}]}},{"id":"143","type":"weapon","attributes":{"name":"Armoured
+        hull","attacks":"3","ws":4,"strength":6,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"197","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"68","type":"unit","attributes":{"name":"Ravenwing
+        Dark Talon","movement":20,"toughness":8,"sv":3,"invul_sv":5,"wounds":11,"leadership":6,"objective_control":0,"faction_id":2},"weapons":{"data":[{"id":"144","type":"weapon","attributes":{"name":"Hurricane
+        bolter","attacks":"6","ws":3,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"198","type":"ability","attributes":{"name":"Rapid
+        Fire 6, Twin-Linked","description":"Refer to game rules"}},{"id":"199","type":"ability","attributes":{"name":"Rapid
+        Fire 6, Twin-Linked","description":"Refer to game rules"}}]}},{"id":"145","type":"weapon","attributes":{"name":"Rift
+        cannon","attacks":"D3+1","ws":3,"strength":16,"ap":4,"damage":"3","range":18},"abilities":{"data":[{"id":"200","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}},{"id":"201","type":"ability","attributes":{"name":"Blast,
+        Devastating Wounds","description":"Refer to game rules"}}]}},{"id":"146","type":"weapon","attributes":{"name":"Armoured
+        Hull","attacks":"3","ws":4,"strength":6,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"202","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"69","type":"unit","attributes":{"name":"Land
+        Speeder Vengeance","movement":14,"toughness":8,"sv":3,"invul_sv":5,"wounds":10,"leadership":6,"objective_control":3,"faction_id":2},"weapons":{"data":[{"id":"147","type":"weapon","attributes":{"name":"➤
+        Plasma storm battery - standard","attacks":"D6+1","ws":3,"strength":8,"ap":2,"damage":"1","range":36},"abilities":{"data":[{"id":"203","type":"ability","attributes":{"name":"Blast,
+        Twin-Linked","description":"Refer to game rules"}},{"id":"204","type":"ability","attributes":{"name":"Blast,
+        Twin-Linked","description":"Refer to game rules"}}]}},{"id":"148","type":"weapon","attributes":{"name":"➤
+        Plasma storm battery - supercharge","attacks":"D6+1","ws":3,"strength":9,"ap":3,"damage":"2","range":36},"abilities":{"data":[{"id":"205","type":"ability","attributes":{"name":"Blast,
+        Hazardous, Twin-Linked","description":"Refer to game rules"}},{"id":"206","type":"ability","attributes":{"name":"Blast,
+        Hazardous, Twin-Linked","description":"Refer to game rules"}},{"id":"207","type":"ability","attributes":{"name":"Blast,
+        Hazardous, Twin-Linked","description":"Refer to game rules"}}]}},{"id":"149","type":"weapon","attributes":{"name":"Close
+        Combat Weapon","attacks":"4","ws":3,"strength":4,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"208","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"70","type":"unit","attributes":{"name":"Ravenwing
+        Darkshroud","movement":14,"toughness":8,"sv":3,"invul_sv":5,"wounds":10,"leadership":6,"objective_control":3,"faction_id":2},"weapons":{"data":[{"id":"150","type":"weapon","attributes":{"name":"Close
+        Combat Weapon","attacks":"4","ws":3,"strength":4,"ap":0,"damage":"1","range":0},"abilities":{"data":[{"id":"209","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"71","type":"unit","attributes":{"name":"Ravenwing
+        Black Knights","movement":12,"toughness":5,"sv":3,"invul_sv":5,"wounds":3,"leadership":6,"objective_control":2,"faction_id":2},"weapons":{"data":[{"id":"151","type":"weapon","attributes":{"name":"Bolt
+        Pistol","attacks":"1","ws":3,"strength":4,"ap":0,"damage":"1","range":12},"abilities":{"data":[{"id":"210","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"152","type":"weapon","attributes":{"name":"Black
+        Knight combat weapon","attacks":"3","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"211","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"153","type":"weapon","attributes":{"name":"➤ Plasma
+        talon - Standard","attacks":"2","ws":3,"strength":7,"ap":2,"damage":"1","range":18},"abilities":{"data":[{"id":"212","type":"ability","attributes":{"name":"Rapid
+        Fire 1","description":"Refer to game rules"}}]}},{"id":"154","type":"weapon","attributes":{"name":"➤
+        Plasma talon - Supercharged","attacks":"2","ws":3,"strength":8,"ap":3,"damage":"2","range":18},"abilities":{"data":[{"id":"213","type":"ability","attributes":{"name":"Hazardous,
+        Rapid Fire 1","description":"Refer to game rules"}},{"id":"214","type":"ability","attributes":{"name":"Hazardous,
+        Rapid Fire 1","description":"Refer to game rules"}}]}},{"id":"155","type":"weapon","attributes":{"name":"➤
+        Astartes grenade launcher - frag","attacks":"D3","ws":3,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"215","type":"ability","attributes":{"name":"Blast","description":"Refer
+        to game rules"}}]}},{"id":"156","type":"weapon","attributes":{"name":"➤ Astartes
+        grenade launcher - krak","attacks":"1","ws":3,"strength":9,"ap":2,"damage":"D3","range":24},"abilities":{"data":[{"id":"216","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"72","type":"unit","attributes":{"name":"Ravenwing
+        Command Squad","movement":12,"toughness":5,"sv":3,"invul_sv":5,"wounds":4,"leadership":6,"objective_control":2,"faction_id":2},"weapons":{"data":[{"id":"157","type":"weapon","attributes":{"name":"Black
+        Knight combat weapon","attacks":"3","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"217","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"158","type":"weapon","attributes":{"name":"Bolt
+        Pistol","attacks":"1","ws":3,"strength":4,"ap":0,"damage":"1","range":12},"abilities":{"data":[{"id":"218","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"159","type":"weapon","attributes":{"name":"Master-crafted
+        power weapon","attacks":"6","ws":2,"strength":5,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"219","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"73","type":"unit","attributes":{"name":"Deathwing
+        Knights","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":4,"leadership":6,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"160","type":"weapon","attributes":{"name":"Mace
+        of absolution","attacks":"4","ws":2,"strength":6,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"220","type":"ability","attributes":{"name":"Anti-Monster
+        4+, Anti-Vehicle 4+","description":"Refer to game rules"}},{"id":"221","type":"ability","attributes":{"name":"Anti-Monster
+        4+, Anti-Vehicle 4+","description":"Refer to game rules"}}]}},{"id":"161","type":"weapon","attributes":{"name":"Power
+        Weapon","attacks":"5","ws":2,"strength":6,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"222","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"74","type":"unit","attributes":{"name":"Deathwing
+        Terminator Squad","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":3,"leadership":6,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"162","type":"weapon","attributes":{"name":"Storm
+        Bolter","attacks":"2","ws":3,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"223","type":"ability","attributes":{"name":"Rapid
+        Fire 2","description":"Refer to game rules"}}]}},{"id":"163","type":"weapon","attributes":{"name":"Power
+        Weapon","attacks":"4","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"224","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"164","type":"weapon","attributes":{"name":"Power
+        Fist","attacks":"3","ws":3,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"225","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"165","type":"weapon","attributes":{"name":"Chainfist","attacks":"3","ws":4,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"226","type":"ability","attributes":{"name":"Anti-Vehicle
+        3+","description":"Refer to game rules"}}]}}]}},{"id":"75","type":"unit","attributes":{"name":"Inner
+        Circle Companions","movement":6,"toughness":4,"sv":3,"invul_sv":null,"wounds":3,"leadership":6,"objective_control":2,"faction_id":2},"weapons":{"data":[{"id":"166","type":"weapon","attributes":{"name":"Heavy
+        Bolt Pistol","attacks":"1","ws":3,"strength":4,"ap":1,"damage":"1","range":18},"abilities":{"data":[{"id":"227","type":"ability","attributes":{"name":"Pistol","description":"Refer
+        to game rules"}}]}},{"id":"167","type":"weapon","attributes":{"name":"➤ Calibanite
+        Greatsword - Strike","attacks":"4","ws":3,"strength":6,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"228","type":"ability","attributes":{"name":"Lethal
+        Hits","description":"Refer to game rules"}}]}},{"id":"168","type":"weapon","attributes":{"name":"➤
+        Calibanite Greatsword - Sweep","attacks":"5","ws":3,"strength":6,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"229","type":"ability","attributes":{"name":"Sustained
+        Hits 2","description":"Refer to game rules"}}]}}]}},{"id":"76","type":"unit","attributes":{"name":"Ravenwing
+        Talonmaster [Legends]","movement":16,"toughness":7,"sv":3,"invul_sv":5,"wounds":6,"leadership":6,"objective_control":2,"faction_id":2},"weapons":{"data":[{"id":"169","type":"weapon","attributes":{"name":"Twin
+        Assault Cannon","attacks":"6","ws":3,"strength":6,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"230","type":"ability","attributes":{"name":"Devastating
+        Wounds, Twin-Linked","description":"Refer to game rules"}},{"id":"231","type":"ability","attributes":{"name":"Devastating
+        Wounds, Twin-Linked","description":"Refer to game rules"}}]}},{"id":"170","type":"weapon","attributes":{"name":"Twin
+        Heavy Bolter","attacks":"3","ws":3,"strength":5,"ap":1,"damage":"2","range":36},"abilities":{"data":[{"id":"232","type":"ability","attributes":{"name":"Sustained
+        Hits 1, Twin-Linked","description":"Refer to game rules"}},{"id":"233","type":"ability","attributes":{"name":"Sustained
+        Hits 1, Twin-Linked","description":"Refer to game rules"}}]}},{"id":"171","type":"weapon","attributes":{"name":"Power
+        Weapon","attacks":"5","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"234","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}}]}},{"id":"77","type":"unit","attributes":{"name":"Deathwing
+        Strikemaster [Legends]","movement":5,"toughness":5,"sv":2,"invul_sv":4,"wounds":5,"leadership":6,"objective_control":1,"faction_id":2},"weapons":{"data":[{"id":"172","type":"weapon","attributes":{"name":"Storm
+        Bolter","attacks":"2","ws":2,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"235","type":"ability","attributes":{"name":"Rapid
+        Fire 2","description":"Refer to game rules"}}]}},{"id":"173","type":"weapon","attributes":{"name":"Master-crafted
+        Power Weapon","attacks":"5","ws":2,"strength":5,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"236","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"174","type":"weapon","attributes":{"name":"Chainfist","attacks":"4","ws":3,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"237","type":"ability","attributes":{"name":"Anti-Vehicle
+        3+","description":"Refer to game rules"}}]}},{"id":"175","type":"weapon","attributes":{"name":"Mace
+        of Absolution","attacks":"5","ws":2,"strength":6,"ap":1,"damage":"3","range":0},"abilities":{"data":[{"id":"238","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"176","type":"weapon","attributes":{"name":"Power
+        Fist","attacks":"4","ws":2,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"239","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"177","type":"weapon","attributes":{"name":"Thunder
+        Hammer","attacks":"4","ws":3,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"240","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}},{"id":"178","type":"weapon","attributes":{"name":"Twin
+        Lightning Claws","attacks":"6","ws":2,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"241","type":"ability","attributes":{"name":"Twin-Linked","description":"Refer
+        to game rules"}}]}}]}},{"id":"78","type":"unit","attributes":{"name":"Deathwing
+        Command Squad [Legends]","movement":0,"toughness":0,"sv":0,"invul_sv":null,"wounds":0,"leadership":0,"objective_control":0,"faction_id":2},"weapons":{"data":[{"id":"179","type":"weapon","attributes":{"name":"Power
+        Fist","attacks":"3","ws":3,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"242","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"180","type":"weapon","attributes":{"name":"Storm
+        Bolter","attacks":"2","ws":3,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"243","type":"ability","attributes":{"name":"Rapid
+        Fire 2","description":"Refer to game rules"}}]}},{"id":"181","type":"weapon","attributes":{"name":"Chainfist","attacks":"3","ws":4,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"244","type":"ability","attributes":{"name":"Anti-Vehicle
+        3+","description":"Refer to game rules"}}]}},{"id":"182","type":"weapon","attributes":{"name":"Halberd
+        of Caliban","attacks":"5","ws":3,"strength":6,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"245","type":"ability","attributes":{"name":"Precision","description":"Refer
+        to game rules"}}]}},{"id":"183","type":"weapon","attributes":{"name":"Storm
+        Bolter","attacks":"2","ws":3,"strength":4,"ap":0,"damage":"1","range":24},"abilities":{"data":[{"id":"246","type":"ability","attributes":{"name":"Rapid
+        Fire 1","description":"Refer to game rules"}}]}},{"id":"184","type":"weapon","attributes":{"name":"Power
+        Weapon","attacks":"4","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"247","type":"ability","attributes":{"name":"-","description":"Refer
+        to game rules"}}]}},{"id":"185","type":"weapon","attributes":{"name":"Twin
+        Lightning Claws","attacks":"5","ws":3,"strength":5,"ap":2,"damage":"1","range":0},"abilities":{"data":[{"id":"248","type":"ability","attributes":{"name":"Twin-Linked","description":"Refer
+        to game rules"}}]}},{"id":"186","type":"weapon","attributes":{"name":"Thunder
+        Hammer","attacks":"3","ws":4,"strength":8,"ap":2,"damage":"2","range":0},"abilities":{"data":[{"id":"249","type":"ability","attributes":{"name":"Devastating
+        Wounds","description":"Refer to game rules"}}]}}]}}]}'
+  recorded_at: Wed, 31 Jul 2024 17:30:21 GMT
+recorded_with: VCR 6.2.0
