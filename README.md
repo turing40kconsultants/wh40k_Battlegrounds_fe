@@ -10,7 +10,7 @@
     - Login: Click on the Login link to log in using your GitHub account.
     - Create a New Account: If you don't have an account, click on the Create New Account link to sign up.
   
-  <img src="Screenshot 2024-08-01 at 7.18.03 PM.png" alt="drawing" width="400" style="transform:translateX(calc(40vw - 80%));"/>
+  <img src="Screenshot 2024-08-01 at 7.18.03 PM.png" width="400" style="transform:translateX(calc(40vw - 80%));"/>
 
 2. Choosing Units for Battle
     - Choose Units: Click on the Choose Units link to select your attacker and defender units.
