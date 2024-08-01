@@ -16,4 +16,11 @@ class Wh40kBgsFacade
       Faction.new(faction_data)
     end
   end
+
+  def one_unit(unit_id)
+    json = WhService.get_units_by_faction(unit_id)
+    json[:data].map do |unit_data|
+      Unit.new(unit_data)
+    end
+  end
 end
