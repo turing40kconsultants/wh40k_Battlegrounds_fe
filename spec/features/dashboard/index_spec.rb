@@ -44,9 +44,9 @@ RSpec.describe "dashboard" do
     end
 
     click_button("Submit")
-save_and_open_page
+# save_and_open_page
     expect(page).to have_css(".player")
     expect(page).to have_css(".opponent")
-    expect(page).to have_link("Start Fight")
+    expect(page).to have_button("Start Fight")
   end
 end
