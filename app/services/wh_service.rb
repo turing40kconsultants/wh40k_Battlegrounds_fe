@@ -13,4 +13,9 @@ class WhService
     response = conn.get("/api/v1/factions/#{faction_id}/units")
     JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.get_unit_by_id(unit_id)
+    response = conn.get("/api/v1/units/#{unit_id}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
