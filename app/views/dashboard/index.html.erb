@@ -1,27 +1,27 @@
 <h2>Welcome to Warhammer 40k Battlegrounds</h2>
-<% if @player %>
-  <div class="player">
+<% if @attacker %>
+  <div class="attacker">
           
-    Your Unit: <br>
-    Name: <%= @player[:attributes][:name] %><br>
-    Weapon: <%= @player[:weapons][:data].first[:attributes][:name] %>
+    Attacker Unit: <br>
+    Name: <%= @attacker[:attributes][:name] %><br>
+    Weapon: <%= @attacker[:weapons][:data].first[:attributes][:name] %>
   </div><br>
 <% end %>
 
-<% if @opponent %>
-  <div class="opponent">
-    Opponent's Unit: <br>
-    Name: <%= @opponent[:attributes][:name] %><br>
-    Weapon: <%= @opponent[:weapons][:data].first[:attributes][:name] %>
+<% if @defender %>
+  <div class="defender">
+    Defender's Unit: <br>
+    Name: <%= @defender[:attributes][:name] %><br>
+    Weapon: <%= @defender[:weapons][:data].first[:attributes][:name] %>
   </div><br>
 <% end %>
 
 <div><%= link_to 'Choose Units', search_index_path %></div>
 
-<% if @player && @opponent %>
+<% if @attacker && @defender %>
   <%= form_with url: fight_index_path, method: :get, local: true do |form| %>
-    <%= hidden_field_tag :player, @player.to_json %>
-    <%= hidden_field_tag :opponent, @opponent.to_json %>
+    <%= hidden_field_tag :attacker, @attacker.to_json %>
+    <%= hidden_field_tag :defender, @defender.to_json %>
 
     <div><%= form.submit "Start Fight" %></div>
   <% end %>
