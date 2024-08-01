@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.feature "Results", type: :feature do
+  before(:each) do
+    @user = User.create!(uid: "123", username: "testuser")
+
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
+  end
   it "can see results" do
     visit results_path(wounds: 6, kills: 1)
 
