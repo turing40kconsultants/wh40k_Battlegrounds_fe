@@ -17,14 +17,14 @@
           <div class="weapon">Weapon: <%= unit[:weapons][:data].first[:attributes][:name] %></div>
           <div>
             <label>
-              <%= form.radio_button :player, unit.to_json %>
-              Select for Player 1
+              <%= form.radio_button :attacker, unit.to_json %>
+              Select for Attacker
             </label>
           </div>
           <div>
             <label>
-              <%= form.radio_button :opponent, unit.to_json %>
-              Select for Player 2
+              <%= form.radio_button :defender, unit.to_json %>
+              Select for Defender
             </label>
           </div>
 
