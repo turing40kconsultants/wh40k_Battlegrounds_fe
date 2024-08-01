@@ -1,37 +1,36 @@
 <div id="factions">
-  <%= form_with url: search_index_path, method: :get, data: {turbo: false}, local: true do |form| %>
-      <%= select_tag(:faction_id, options_for_select(factions_search)) %>
-      <%= submit_tag('Search For Units') %>
+  <%= form_with url: search_index_path, method: :get, data: { turbo: false }, local: true do |form| %>
+    <%= select_tag(:faction_id, options_for_select(factions_search)) %>
+    <%= submit_tag('Search For Units') %>
   <% end %>
 </div><br>
 
 <% if @units_json %>
   <div class="results">
-  <%= form_with url: dashboard_path, method: :get, data: {turbo: false}, local: true do |form| %>
-    <% @units_json[:data].each do |unit| %>
-      <% if !unit[:weapons][:data].empty? %>
-        <div id=<%= "unit_#{unit[:id]}" %> >
-
-          <div class="name">Name: <%= unit[:attributes][:name] %></div>
-          
-          <div class="weapon">Weapon: <%= unit[:weapons][:data].first[:attributes][:name] %></div>
-          <div>
-            <label>
-              <%= form.radio_button :player, unit.to_json %>
-              Select for Player 1
-            </label>
-          </div>
-          <div>
-            <label>
-              <%= form.radio_button :opponent, unit.to_json %>
-              Select for Player 2
-            </label>
-          </div>
-
-        </div><br>
-      <% end %>
+    <%= form_with url: dashboard_path, method: :get, data: { turbo: false }, local: true do |form| %>
+      <div class="unit-cards">
+        <% @units_json[:data].each do |unit| %>
+          <% if !unit[:weapons][:data].empty? %>
+            <div class="unit-card">
+              <div class="name">Name: <%= unit[:attributes][:name] %></div>
+              <div class="weapon">Weapon: <%= unit[:weapons][:data].first[:attributes][:name] %></div>
+              <div>
+                <label>
+                  <%= form.radio_button :player, unit.to_json %>
+                  Select for Player 1
+                </label>
+              </div>
+              <div>
+                <label>
+                  <%= form.radio_button :opponent, unit.to_json %>
+                  Select for Player 2
+                </label>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+      <%= form.submit "Submit", class: "btn-submit" %>
     <% end %>
-    <%= form.submit "Submit" %>
-  <% end%>
   </div>
 <% end %>
