@@ -11,19 +11,19 @@
       <div class="unit-cards">
         <% @units_json[:data].each do |unit| %>
           <% if !unit[:weapons][:data].empty? %>
-            <div class="unit-card">
+              <div class="unit-card" id="unit_<%= unit[:id] %>">
               <div class="name">Name: <%= unit[:attributes][:name] %></div>
               <div class="weapon">Weapon: <%= unit[:weapons][:data].first[:attributes][:name] %></div>
               <div>
                 <label>
-                  <%= form.radio_button :player, unit.to_json %>
-                  Select for Player 1
+                  <%= form.radio_button :attacker, unit.to_json %>
+                  Select for Attacker
                 </label>
               </div>
               <div>
                 <label>
-                  <%= form.radio_button :opponent, unit.to_json %>
-                  Select for Player 2
+                  <%= form.radio_button :defender, unit.to_json %>
+                  Select for Defender
                 </label>
               </div>
             </div>
