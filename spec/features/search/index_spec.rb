@@ -15,14 +15,13 @@ RSpec.describe "Search" do
 
     expect(page).to have_css(".results")
 
-    within("#unit_1") do
+    within(".unit-cards") do
       expect(page).to have_css(".name")
       expect(page).to have_css(".weapon")
-      expect(page).to have_selector("input[type=radio][name=player]")
-      expect(page).to have_selector("input[type=radio][name=opponent]")
+      expect(page).to have_selector("input[type=radio][name=attacker]")
+      expect(page).to have_selector("input[type=radio][name=defender]")
     end
 
     expect(page).to have_button("Submit")
-# save_and_open_page
   end
 end

@@ -2,27 +2,17 @@ require "rails_helper"
 
 RSpec.describe "dashboard" do
   before(:each) do
-    user = User.create!(uid: "123", username: "testuser")
-    # session[:user] = user
-    # page.set_rack_session(user: { "id" => user.id })
-    # binding.pry
-    # visit new_session_path
-    # fill_in "Username", with: user.username
-    # click_button "Login"
+    @user = User.create!(uid: "123", username: "testuser")
 
-    # page.driver.browser.basic_authorize(user.username, user.uid)
-    # page.driver.browser.set_cookie("user_id=#{user.id}")
-    # page.driver.browser.get("#{login_path}?code=valid_code")
-    #THIS NEEDS WORK, SHOULD PROBABLY IMPLEMENT STANDARD USER LOGIN
-
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@user)
     visit dashboard_path
   end
 
   it "can see link to search for units and will not see start fight link until 2 units are chosen" do
     expect(page).to have_content("Welcome to Warhammer 40k Battlegrounds")
 
-    expect(page).to_not have_css(".player")
-    expect(page).to_not have_css(".opponent")
+    expect(page).to_not have_css(".attacker")
+    expect(page).to_not have_css(".defender")
 
     expect(page).to have_link("Choose Units", href: search_index_path)
     expect(page).to_not have_link("Start Fight", href: fight_index_path)
@@ -30,23 +20,23 @@ RSpec.describe "dashboard" do
     click_link("Choose Units")
 
     expect(page).to have_current_path(search_index_path)
-    
     within("#factions") do
-      select "Necrons", :from => :faction_id
-      click_button("Search For Units")
-    end
+    select "Necrons", :from => :faction_id
+    click_button("Search For Units")
+  end
+  
 
-    within("#unit_1") do
-      choose("player")
+    within("#unit_4") do
+      choose("attacker")
     end
-    within("#unit_2") do
-      choose("opponent")
+    within("#unit_5") do
+      choose("defender")
     end
 
     click_button("Submit")
-# save_and_open_page
-    expect(page).to have_css(".player")
-    expect(page).to have_css(".opponent")
+
+    expect(page).to have_css(".attacker")
+    expect(page).to have_css(".defender")
     expect(page).to have_button("Start Fight")
   end
 end

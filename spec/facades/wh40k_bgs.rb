@@ -10,7 +10,7 @@ RSpec.describe "Wh40k Battlegrounds facade", type: :facade do
   it 'can get all units from a faction', :vcr do
     faction_id = 1
 
-    stub_request(:get, "#{@base_url}/api/v1/factions/#{faction_id}/units").to_return(status: 200, body: @units_from_faction)
+    # stub_request(:get, "#{@base_url}/api/v1/factions/#{faction_id}/units").to_return(status: 200, body: @units_from_faction)
     
     facade = Wh40kBgsFacade.new
     response = facade.all_units(faction_id)
