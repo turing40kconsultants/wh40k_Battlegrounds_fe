@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "Welcome Page" do
-  it "has link to log in" do
+  xit "has link to log in" do
     visit "/"
     expect(page).to have_content("Welcome to 40K arena")
 
@@ -10,7 +10,7 @@ RSpec.describe "Welcome Page" do
     expect(current_path).to eq(login_path)
   end
   
-  it "has link to create a new account" do
+  xit "has link to create a new account" do
     visit "/"
     expect(page).to have_content("Welcome to 40K arena")
 

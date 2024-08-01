@@ -1,14 +1,14 @@
 class FightController < ApplicationController
   def index
-    @player = Unit.new(JSON.parse(params[:player], symbolize_names: true))
-    @opponent = Unit.new(JSON.parse(params[:opponent], symbolize_names: true))
+    @attacker = Unit.new(JSON.parse(params[:attacker], symbolize_names: true))
+    @defender = Unit.new(JSON.parse(params[:defender], symbolize_names: true))
     # binding.pry
 
-    game = Game.new(@player, @opponent)
+    game = Game.new(@attacker, @defender)
     # binding.pry
-    @wounds = game.attack(@opponent)
+    @wounds = game.attack(@defender)
 
-    if @wounds >= @opponent.wounds
+    if @wounds >= @defender.wounds
       @kills = 1
     end
 
