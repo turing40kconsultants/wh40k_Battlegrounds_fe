@@ -9,12 +9,13 @@
 1. Login or Create an account
     - Login: Click on the Login link to log in using your GitHub account.
     - Create a New Account: If you don't have an account, click on the Create New Account link to sign up.
-
+  
 2. Choosing Units for Battle
     - Choose Units: Click on the Choose Units link to select your attacker and defender units.
     - Search for Units: Use the dropdown menu to select a faction and click Search For Units.
     - Select Units: Review the list of units and choose one for the attacker and one for the defender by selecting the corresponding radio buttons.
     - Click Submit to finalize your selection.
+
 
 3. Starting the Battle
     - Once you have selected both attacker and defender units, click the Start Fight button to initiate the battle.
@@ -27,6 +28,24 @@
 - Click "Prepare the Next Battle" to set up a new battle.
 
 - Enjoy the game and may your strategies lead you to victory in the Warhammer 40K Battlegrounds!
+
+
+## Screenshots
+
+  <img src="Screenshot 2024-08-01 at 7.18.03 PM.png" alt="drawing" width="400" style="transform:translateX(calc(40vw - 80%));"/>
+
+##
+  <img src="IMG_8528 2-1.jpg" alt="drawing" width="400" style="transform:translateX(calc(40vw - 80%));"/>
+
+##
+  <img src="IMG_8529 2.jpg" alt="drawing" width="400" style="transform:translateX(calc(40vw - 80%));"/>
+
+##
+  <img src="IMG_8530 2.jpg" alt="drawing" width="400" style="transform:translateX(calc(40vw - 80%));"/>
+
+##
+  <img src="IMG_8531 2.jpg" alt="drawing" width="400" style="transform:translateX(calc(40vw - 80%));"/>
+
 
 ## Deployed location
 [Site](https://intense-gorge-51639-2d7942788e0c.herokuapp.com)
